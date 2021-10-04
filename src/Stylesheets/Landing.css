@@ -1,0 +1,222 @@
+* {
+    color: black;
+    font-family: 'Glory', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+}
+.container {
+    margin: 2rem 0 3rem ;
+    max-width: 100%;
+}
+#left{
+    width: 28rem;
+    height: 25rem;
+    display: block;
+    text-align: center;
+    position: inherit;
+    float: left;
+    left: 10%;
+    margin: 6rem 2rem 4rem;
+}
+#left h1 {
+    font-size: 3.3rem;
+    text-align: center;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+#left a {
+    text-decoration: none;
+}
+#left p {
+    font-size: 1.5rem;
+    /* font-weight: bolder; */
+    color: #194416;
+    margin-top: 1rem;
+}
+#left button{
+    background-color: rgb(241, 201, 116);
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    margin-top: -1.5rem;
+    width: 3rem;
+}
+#right{
+    margin: 3rem 0 3rem 0;
+}
+#right img{
+    height: 70%;
+    width: 55%;
+    position: absolute;
+    display: flex;
+    top: 10;
+    right: 0;
+    border-radius: 80px 0;
+    z-index: 1;
+}
+#partners{
+    margin-top: 20rem;
+}
+@media all and (max-width: 1080px){
+    .container{
+        margin-top: -15rem;
+    }
+    #left {
+        width: 35%;
+        height: 25rem;
+        font-size: 3.2rem;
+        margin: 1rem 0 3rem;
+        padding: 2rem 2rem;
+    }
+    #left p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1rem 0 -2rem;
+    }
+    #left button{
+        font-size: 1.3rem;
+    }
+    #right{
+        margin: -5rem -1rem 1rem;
+    }
+    #right img{
+        margin-left: -2rem;
+        height: 22rem;
+    }
+    #partners{
+        margin-top: 7rem;
+    }
+}
+@media all and (max-width: 960px){
+    .container{
+        margin-top: -10rem;
+    }
+    #left {
+        width: 40%;
+        height: 25rem;
+        font-size: 3.2rem;
+        margin: -2rem 0 4rem;
+        padding: 2rem 2rem;
+    }
+    #left p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1rem 0 -2rem;
+    }
+    #left button{
+        font-size: 1.3rem;
+    }
+    #right{
+        margin: -8rem -1rem;
+    }
+    #right img{
+        margin-left: -2rem;
+        height: 22rem;
+    }
+    #partners{
+        margin-top: 10rem;
+    }
+}
+@media all and (max-width: 780px){
+    .container{
+        margin-top: 2rem;
+    }
+    #left{
+        width: 80%; 
+        height: 18rem;
+        display: block;
+        position: absolute;
+        top: 29rem;
+        /* margin-left: -3rem; */
+        z-index: 10;
+    }
+   #left p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: black;
+        margin: 1.5rem 0 -2rem;
+    }
+    #right{
+        margin: 1rem -1rem;
+    }
+   
+    #right img{
+        justify-self: center;
+        width: 100%;
+        border-radius: 0;
+        z-index: 0;
+    }
+    #partners {
+        margin-top: 10rem;
+    }
+}
+@media all and (max-width:570px){
+    #left{
+        margin-left: -2rem;
+        width: 100%; 
+        z-index: 10;
+        top: 23.5rem;
+    }
+    #left h1 {
+        text-align: center;
+        padding: 0 1rem;
+    }
+    #left p {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    #partners {
+        margin-top: 11rem;
+    }
+    #right img{
+        margin-top: -1rem;
+        height: 37%;
+    }
+}
+@media all and (max-width: 365px){
+    #left{
+        height: 7rem;
+        top: 17rem;
+        left: 0rem;
+        margin: 0;
+    }
+    #left h1{
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0;
+    }
+    #left p {
+        font-size: 1.2rem;
+        margin: 1.2rem 0 -1.8rem;
+    }
+    #left button {
+        font-size: 1.2rem;
+        width: 2rem;
+    }
+    #right img{
+        height: 34%;
+        margin-top: -1rem;
+    }
+    #partners {
+        margin-top: 6rem;
+    }
+}
+@media all and (max-width: 320px){
+    #left{
+        top: 17rem;
+        left: 0;
+    }
+    #right img {
+        margin-top: -1rem;
+        height: 14rem;
+    }
+    #partners{
+        margin-top: 9rem;
+    }
+}

@@ -1,0 +1,8 @@
+export const SigninType = {
+    SIGNIN_SUCCESS: "SIGNIN_SUCCESS",
+    SIGNIN_FAIL: "SIGNIN_FAIL",
+    SIGNIN_REQUEST: "SIGNIN_REQUEST",
+    SIGNOUT: "SIGNOUT",
+    AUTH_ERROR: "AUTH_ERROR",
+  };
+  
