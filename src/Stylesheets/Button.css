@@ -1,0 +1,47 @@
+.btn-menu, .btn-menus{
+    height: 33px;
+    font-weight: 500;
+    background-color: white;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    font-family: 'Glory', sans-serif;
+    width: 80px;
+    cursor: pointer;
+}
+.btn-menu{
+    margin: 0.2rem 5rem 2rem 0.5rem;
+    border: 1px solid rgb(241, 201, 116);
+    color: #194416;
+}
+.btn-menu:hover{
+    background-color: rgb(241, 201, 116); 
+}
+.btn-menus{
+    margin: 0.2rem 0.5rem 2rem 0.5rem;
+    border: 1px solid #194416;
+    color: rgb(241, 201, 116);
+}
+.btn-menus:hover{
+    background-color: #194416; 
+}
+@media (max-width: 1240px){
+    .btn-menu{
+        margin: -1rem 1rem 1rem -2rem;
+    }
+    .btn-menus{
+        margin: -1rem 2rem 1rem 2rem;
+    }
+}
+@media(max-width: 1080px){
+    .btn-menu{
+        margin: -1rem 1.5rem 1.3rem -1rem;
+    }
+    .btn-menus{
+        margin: -1rem 0.8rem 1.3rem -3rem;
+    }
+}
+@media(max-width: 960px){
+    .btn-menu, .btn-menus{
+        display: none;
+    }
+}

@@ -1,0 +1,20 @@
+.footer {
+    margin-top: 5rem;
+}
+hr{
+    width: 96%;
+    align-items: center;
+}
+.socialMedia{
+    text-align: center;
+    width: 70vw;
+    justify-content: center;
+    margin-right: 2rem;
+    overflow: hidden;
+}
+.socialMedia p{
+    display: inline;
+    padding: 2rem;
+    font-size: 20px;
+    font-weight: 500;
+}
