@@ -1,5 +1,5 @@
 import axios from "axios";
-import BaseURL from "../../Utils/BaseUrl";
+// import BaseURL from "../../Utils/BaseUrl";
 
 import { ServicesTypes, ServiceType } from "../Type";
 
@@ -20,7 +20,7 @@ const getService = (data) => {
 
 export const getServicesAsync = () => async (dispatch) => {
   try {
-    let res = await axios.get(`${BaseURL}/service/list`);
+    let res = await axios.get('http://localhost:4000/service/list');
 
     console.log(res, "response");
 
@@ -33,10 +33,10 @@ export const getServicesAsync = () => async (dispatch) => {
 
 export const getServiceAsync = (id) => async (dispatch) => {
   try {
-    let res = await axios.get(`${BaseURL}/service/${id}`);
+    let res = await axios.get('http://localhost:4000/service/id');
     console.log(res, "response");
 
-    console.log(BaseURL, "base url");
+    console.log( "base url");
     dispatch(getService(res.data.data));
   } catch (err) {
     console.log(err);

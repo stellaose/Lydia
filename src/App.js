@@ -41,7 +41,7 @@ function App() {
               <Route exact path = '/multi'>
                 <FormData />
               </Route>
-              <Route exact path = '/service'>
+              <Route exact path = '/services'>
                 <Service/>
               </Route>
               <ProtectedRoute

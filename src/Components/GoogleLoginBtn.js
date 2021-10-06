@@ -1,6 +1,6 @@
 import GoogleLogin from "react-google-login";
 import axios from "axios";
-import BaseURL from "../Utils/BaseUrl";
+// import BaseURL from "../Utils/BaseUrl";
 
 const GoogleLoginBtn = () => {
     const responseSuccessGoogle = (response) => {
@@ -8,7 +8,7 @@ const GoogleLoginBtn = () => {
 
         axios({
             method: 'POST',
-            url: `${BaseURL}/user/google`,
+            url: 'http://localhost:4000/user/google',
             data: {tokenId: response.tokenId}
         }).then(response => {
             console.log('Google login success', response);

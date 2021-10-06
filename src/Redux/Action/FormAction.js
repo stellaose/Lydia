@@ -7,13 +7,18 @@ const Register = (name, preference, knowledge, room, date, price, history) => as
     dispatch({type: FormType.REGISTER_REQUEST});
     try {
         const {data} = await axios.post(`${BaseURL}/form/create`, {
-            name, preference, knowledge, room, date, price
+            name, 
+            preference, 
+            knowledge, 
+            room, 
+            date, 
+            price
             });
-            console.log(data)
           dispatch({type: FormType.REGISTER_SUCCESS, payload: data})
-          history.push("/service");
+          history.push("/services");
           localStorage.setItem('userToken', JSON.stringify(data));
-    } catch (error) {
+    } 
+    catch (error) {
         dispatch({
             type: FormType.REGISTER_FAIL,
             payload: error.message
