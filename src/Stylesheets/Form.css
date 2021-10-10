@@ -138,13 +138,56 @@ label > div > p {
         margin: 2rem 2rem 1rem 9rem;
     }
 }
+@media all and (max-width: 960px){
+    .form-section{
+        margin: 3rem 10rem 1rem;
+        width: 80%;
+    }
+    .form-div {
+        margin: 3rem 2rem 2rem 8rem;
+        width: 100%;
+    }
+    .form-section > img {
+        height: 18rem;
+        width: 13rem;
+        margin-bottom: 2rem ;
+    }
+    .form-section > h3 {
+        font-size: 2.2rem;
+        margin-left: -3rem;
+    }
+    .form-div > h3 {
+        margin: 2rem;
+    }
+    .form-section > p {
+        font-size: 1.6rem;
+        margin-left: -3rem;
+    }
+    label > div > p, .know, .price, .room {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .form-data > input {
+        height: 2.5rem;
+        width: 17rem;
+    }
+    .form-section > a > button, .data > button {
+        height: 2.5rem;
+        width: 10rem;
+        font-size: 1.4rem;
+        
+    }
+    .form-section > a > button {
+        margin: 2rem 2rem 1rem 5rem;
+    }
+}
 @media all and (max-width: 780px){
     .form-section{
         margin: 3rem 10rem 1rem;
         width: 80%;
     }
     .form-div {
-        margin: 3rem 5rem 2rem;
+        margin: 2rem 5rem 2rem;
         width: 100%;
     }
     .form-section > img {
@@ -172,9 +215,9 @@ label > div > p {
         width: 15rem;
     }
     .form-section > a > button, .data > button {
-        height: 2.7rem;
-        width: 11rem;
-        font-size: 1.5rem;
+        height: 2.4rem;
+        width: 9rem;
+        font-size: 1.3rem;
         
     }
     .form-section > a > button {

@@ -15,7 +15,7 @@ const Form = () => {
                         But first, we would like to know you a little better...
                     </p>
                 
-                    <Link to = '/multi' >
+                    <Link to = '/data' >
                         <button>Get Started!</button>
                     </Link>
                 </div>

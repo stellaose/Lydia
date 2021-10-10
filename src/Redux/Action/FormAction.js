@@ -15,10 +15,9 @@ const Register = (name, preference, knowledge, room, date, price, history) => as
             price
             });
           dispatch({type: FormType.REGISTER_SUCCESS, payload: data})
-          history.push("/services");
+          history.push("/service");
           localStorage.setItem('userToken', JSON.stringify(data));
-    } 
-    catch (error) {
+    } catch (error) {
         dispatch({
             type: FormType.REGISTER_FAIL,
             payload: error.message

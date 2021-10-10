@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Discounted Curation Service",
+        "price": "50, 000",
+        "description": "Our special curation service for building your dream space. The perfect balance between working with a designer and the flexibility to try out designs on your own.",
+        "content1": "1 on 1 time via email with your appointed designer",
+        "content2": "2 draft idea for your selected number of rooms",
+        "content3": "Final design with shopping & access to exclusive discounts with our furniture retailer partners",
+        "content4": "No custom floor plan",
+        "content5": "1 round of revision"
+    },
+    {
+        "name": "Classic Curation Service",
+        "price": "100, 000",
+        "description": "Our classic curation service for building your dream space. The perfect balance between working with a designer and the flexibility to try out designs on your own.",
+        "content1": "1 on 1 time via email with your rising star designer",
+        "content2": "2 draft ideas for your selected number of rooms",
+        "content3": "Final design with shopping & access to exclusive discounts with our furniture retailer partners",
+        "content4": "Custom floor plan for 1 room",
+        "content5": "1 round of revision"
+    },
+    {
+        "name": "Special Curation Service",
+        "price": "200, 000",
+        "description": "Our special curation service for building your dream space. The perfect balance between working with a designer and the flexibility to try out designs on your own.",
+        "content1": "1 on 1 time via email with your designer",
+        "content2": "2 draft ideas for your selected number of rooms",
+        "content3": "Final design with shopping & access to exclusive discounts with our furniture retailer partners",
+        "content4": "Custom floor plan for 3 room",
+        "content5": "2 round of revision"
+    },
+    {
+        "name": "Premium Curation Service",
+        "price": "500, 000",
+        "description": "Our premium furniture curation service to fill your space with pieces you absolutely love. Collaborate with an expert designer to bring the room(s) of your dreams to life.",
+        "content1": "1 on 1 time via email with your expert designer",
+        "content2": "2 draft ideas for your selected number of rooms",
+        "content3": "Final design with shopping & access to exclusive discounts with our furniture retailer partners",
+        "content4": "Custom floor plan for each room",
+        "content5": "5 round of revisions"
+    },
+    {
+        "name": "Custom Design Service",
+        "price": "1, 000, 000",
+        "description": "Get the VIP treatment and end-to-end support for your design project. The complete interior design experience - virtual. Whether you need help choosing flooring, counters, wallpapers, or a custom built-in furniture design, this is the service for you.",
+        "content1": "5 hour package (Additional hours at discount)",
+        "content2": "1 on 1 time via phone, email, or messaging with your expert designer.",
+        "content3": "Final design with shopping & access to discounts with our furniture retailer partners",
+        "content4": "Custom floor plan",
+        "content5": "5 rounds of revision"
+    },
+    {
+        "name": "Luxe Custom Design Service",
+        "price": "2, 000, 000",
+        "description": "Get the VIP treatment and end-to-end support for your design project. The complete interior design experience - virtual. Whether you need help choosing flooring, counters, wallpapers, or a custom built-in furniture design, this is the service for you.",
+        "content1": "10 hour package (Additional hours at discount)",
+        "content2": "1 on 1 time via phone, email, or messaging with your expert designer.",
+        "content3": "Final design with shopping & access to exclusive discounts with our furniture retailer partners",
+        "content4": "Custom floor plan",
+        "content5": "Unlimited Revisions within time allocation"
+    }
+
+]

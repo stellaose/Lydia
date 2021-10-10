@@ -1,0 +1,212 @@
+.body {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 4rem 2rem 2rem;
+}
+.service-contain > h3{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 22rem;
+    margin-left: 3rem;
+}
+a {
+    text-decoration: none;
+}
+.service-body {
+    margin: 1rem 2rem 4rem;
+    width: 22rem;
+    display: flex;
+    padding: 1.5rem;
+    height: 23rem;
+    flex-direction: column;
+    border: 1px solid #194416;
+    border-radius: 20px;
+}
+.service-body > h4{ 
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.service-body:hover {
+    border: 1px solid rgb(241, 201, 116);
+    cursor: pointer;
+}
+
+
+.service-body > p {
+    margin-bottom: 0.3rem;
+}
+@media all and (max-width: 1190px){
+    .body {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 3rem 2rem;
+    }
+    .service-contain > h3 {
+        margin: 2rem 0.5rem 0;
+       font-size: 2.3rem;
+    }
+    .service-body {
+        margin: 1rem 1rem 4rem;
+        width: 20rem;
+        display: flex;
+        padding: 1rem;
+        height: 24rem;
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 1080px){
+    .body {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 4rem 2rem;
+    }
+    .service-contain > h3 {
+        margin: 3rem 0.5rem 0;
+        font-size: 2rem;
+    }
+    .service-body {
+        margin: 1rem 1rem 4rem;
+        width: 25rem;
+        display: flex;
+        padding: 1rem;
+        height: 24rem;
+        flex-direction: column;
+    }
+    .service-body > h4{ 
+        font-size: 1.9rem;
+    }
+    .service-body > p {
+        margin: 0.8rem 0;
+        font-size: 1.1rem;
+    }
+    .service-body > a > .service-btn{
+        width: 8rem;
+        height: 2.4rem;
+        font-size: 1.4rem;
+        margin: 1rem 6rem;
+    }
+    .bold-color {
+        font-size: 1.3rem;
+        color: #194416;
+        font-weight: 700;
+    }
+}
+@media all and (max-width: 960px ){
+    .body {
+        margin: 4rem 2rem 1rem;
+    }
+    .service-body{
+        width: 21rem;
+        margin-top: -1rem;
+        height: 29rem;
+    }
+    .service-body > p {
+        margin: 0.6rem 0;
+    }
+}
+@media all and (max-width: 780px){
+     .body {
+        margin: 1rem 0.5rem;
+    }
+    .service-contain > h3 {
+        margin: 3rem 0.5rem 0;
+    }
+   
+    .service-body {
+        margin: 1rem 1rem 2rem;
+        /* width: 16rem; */
+        width: 90%;
+        padding: 1rem;
+        height: 28rem;
+    }
+    .service-body > h4{ 
+        font-size: 1.7rem;
+    }
+    .service-body > p {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+    .bold-color {
+        font-size: 1.3rem;
+        color: #194416;
+        font-weight: 700;
+    }
+}
+@media all and (max-width: 560px){
+    .service-contain > h3 {
+        margin: 2rem 0.5rem 1.5rem;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    .body {
+        display: block;
+    }
+    .service-body {
+        margin: 1rem 0.5rem 1.5rem;
+        width: 100%;
+        height: 23rem;
+        display: block;
+        padding: 2rem;
+    }
+    .service-body > h4 {
+        font-size: 1.6rem;
+    }
+    .service-body > p {
+        margin: 0.8rem 0;
+        font-size: 1rem;
+    }
+    .bold-color {
+        font-size: 1.2rem;
+        color: #194416;
+        font-weight: 700;
+    }
+}
+@media all and (max-width: 380px){
+    .service-contain > h3 {
+        margin: 2rem 0.5rem 2rem;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    .body {
+        display: block;
+    }
+    .service-body {
+        margin: 1rem 0.5rem 1.5rem;
+        width: 100%;
+        height: 23rem;
+        display: block;
+        padding: 1rem;
+    }
+    .service-body > h4 {
+        font-size: 1.6rem;
+    }
+    .service-body > p {
+        margin: 0.6rem 0;
+    }
+    .bold-color {
+        font-size: 1.1rem;
+        /* color: #194416;
+        font-weight: 700; */
+    }
+}
+@media all and (max-width: 330px){
+    .service-contain > h3 {
+        margin: 2rem 0.5rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    .service-body {
+        margin: 1rem 0.5rem 1.5rem;
+        height: 30rem;
+    }
+    .service-body > h4 {
+        font-size: 1.4rem;
+    }
+    .bold-color {
+        font-size: 1rem;
+        color: #194416;
+        font-weight: 700;
+    }
+    .service-body > p {
+        margin-bottom: 0.4rem;
+    }
+}

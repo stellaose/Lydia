@@ -5,12 +5,13 @@ import Login from './Signin';
 import Signup from './Signup';
 import Checkout from './Checkout';
 import About from './About';
-import Service from './Service';
+import Services from './Services';
 import Form from './Form'
 import Contact from './Contact';
 import ProtectedRoute from "./Components/ProtectedRoute.js";
 import NavBar from './Components/NavBar/NavBar';
 import FormData from './FormData';
+import Service from './Services';
              
 function App() {
   return (
@@ -38,11 +39,14 @@ function App() {
               <Route exact path = '/form'>
                 <Form />
                 </Route>
-              <Route exact path = '/multi'>
+              <Route exact path = '/data'>
                 <FormData />
               </Route>
-              <Route exact path = '/services'>
-                <Service/>
+              <Route  path = '/service'>
+                <Services />
+              </Route>
+              <Route exact path="/service/:id">
+                <Service />
               </Route>
               <ProtectedRoute
                 path="/checkout"
