@@ -1,5 +1,5 @@
 import "../Stylesheets/Footer.css";
-import { AiOutlineInstagram, AiFillFacebook, AiFillYoutube } from 'react-icons/ai';
+import { AiOutlineInstagram, AiFillFacebook } from 'react-icons/ai';
 import {GrTwitter} from 'react-icons/gr';
 
 const Footer = () => {
@@ -11,7 +11,6 @@ const Footer = () => {
                 <p ><AiFillFacebook /></p>
                 <p><GrTwitter /></p>
                 <p ><AiOutlineInstagram/></p>
-                <p ><AiFillYoutube /></p>
             </div>   
       </div>
     </>

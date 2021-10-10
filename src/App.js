@@ -8,6 +8,7 @@ import About from './About';
 import Services from './Services';
 import Form from './Form'
 import Contact from './Contact';
+import Footer from './Components/Footer'
 import ProtectedRoute from "./Components/ProtectedRoute.js";
 import NavBar from './Components/NavBar/NavBar';
 import FormData from './FormData';
@@ -55,6 +56,7 @@ function App() {
             </Switch>
           </CustomSwitch>
         </div>
+        <Footer />
       </BrowserRouter>
     </div>
   );
