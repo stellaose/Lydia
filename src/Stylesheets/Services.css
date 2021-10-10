@@ -30,8 +30,11 @@ a {
     border: 1px solid rgb(241, 201, 116);
     cursor: pointer;
 }
-
-
+.bold-color {
+    font-size: 1.5rem;
+    color: #194416;
+    font-weight: 700;
+}
 .service-body > p {
     margin-bottom: 0.3rem;
 }
