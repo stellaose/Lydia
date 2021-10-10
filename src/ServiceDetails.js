@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 import { getServiceAsync } from "./Redux/Action/ServiceAction";
 import './Stylesheets/Service.css';
 
-const Service = () => {
+const ServiceDetails = () => {
 
     const dispatch = useDispatch();
     const { serviceId } = useParams();
@@ -25,4 +25,4 @@ const Service = () => {
     )
 }
 
-export default Service
+export default ServiceDetails;

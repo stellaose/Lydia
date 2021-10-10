@@ -1,5 +1,5 @@
 import './Stylesheets/Checkout.css';
-import Service from './Service'
+import Service from './ServiceDetails'
 
 const Checkout = () => {
     return (

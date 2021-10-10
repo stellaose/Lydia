@@ -11,7 +11,7 @@ import Contact from './Contact';
 import ProtectedRoute from "./Components/ProtectedRoute.js";
 import NavBar from './Components/NavBar/NavBar';
 import FormData from './FormData';
-import Service from './Services';
+import ServiceDetails from './ServiceDetails';
              
 function App() {
   return (
@@ -46,7 +46,7 @@ function App() {
                 <Services />
               </Route>
               <Route exact path="/service/:id">
-                <Service />
+                <ServiceDetails />
               </Route>
               <ProtectedRoute
                 path="/checkout"
