@@ -11,6 +11,10 @@
     margin: -1rem 0 2.5rem;
     font-family: 'Glory', sans-serif;
 }
+hr{
+    margin: 0 1rem;
+    width: 100%;
+}
 .navbar_logo img{
     height: 2.5rem;
     width: 6rem;

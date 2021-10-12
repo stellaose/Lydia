@@ -122,9 +122,10 @@ hr{
         padding: 1rem 1rem 0.5rem;
   }
   .service > p {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       font-weight: 500;
       padding: 0 1rem;
+      margin-left: 1rem;
   }
   @media all and (max-width: 1180px){
     .container > hr {
@@ -377,13 +378,20 @@ hr{
     }
     .title{
         margin-top: 18rem;
+        /* margin-right: 3rem; */
         width: 80%;
         align-items: center;
     }
       .title h1 {
         font-size: 1.9rem;
-        padding: 0 1rem 0 8rem;
+        padding: 0 1rem 0 6rem;
         z-index: 10;
+    }
+    .service{
+      margin-left: 2rem;
+  }
+    a > p {
+      margin-left: 2.5rem;
     }
 }
 @media all and (max-width: 320px){
