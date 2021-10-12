@@ -10,14 +10,6 @@ body{
   width: 100%;
   background-color: rgb(241, 201, 116);
   text-align: center;
-
-    /* height: 2rem;
-    position: relative;
-    bottom: 0;
-    margin: 22rem 0 1rem;
-    justify-content: center;
-    align-items: center; */
-    /* border-top: 1px solid #194416; */
 }
 
 .social-media {
@@ -29,32 +21,22 @@ body{
     font-size: 1.3rem;
     margin: 0.5rem 2rem;
 }
-@media all and (max-width : 1180px ){
-    .footer {
-        margin-top: 16rem;
-    }
-}
 @media all and (max-width: 760px){
-    .footer{
-        margin-bottom: -10rem;
-    }
     .social-media > p {
         font-size: 1.2rem;
+        margin: 0.5rem;
     }
 }
 @media all and (max-width: 560px){
     .footer{
-        margin-top: 37rem;
+        margin-top: 10rem;
     }
     
 }
 @media all and (max-width: 360px){
-    .footer{
-        margin-top: 20rem;
-    }
     .social-media > p {
         font-size: 1rem;
-        margin: 0rem 0.8rem 1rem;
+        margin: 0.5rem 0.8rem;
 
     }
 }

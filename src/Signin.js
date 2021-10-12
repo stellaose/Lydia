@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useHistory, Link } from "react-router-dom";
 import Signin from './Redux/Action/SigninAction';
 import GoogleLoginBtn from './Components/GoogleLoginBtn';
+import NavBar from './Components/NavBar/NavBar';
 
 import './Stylesheets/Signin.css';
 
@@ -32,6 +33,7 @@ const Login = () => {
 
     return (
         <>
+        <NavBar />
            <div className = 'container'>
                 <div className = 'image'>
                     <img src="/Photos/signin.jpeg" alt="" />
@@ -54,7 +56,6 @@ const Login = () => {
                                 <input
                                     type = 'email'
                                     id = 'email'
-                                    // value = {email}
                                     placeholder = "stuff@gmail.com.."
                                     name = 'email'
                                     onChange={handleInput}
@@ -67,7 +68,6 @@ const Login = () => {
                                     type="password"
                                     placeholder = 'password'
                                     name ="password"
-                                    // value = {password}
                                     onChange = {handleInput}
                                     id = "password"
                                     required
