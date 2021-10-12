@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <>
       <div className= 'footer'>
-        <hr/>
             <div className = 'social-media'>
                 <p ><AiFillFacebook /></p>
                 <p><GrTwitter /></p>

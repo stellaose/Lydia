@@ -8,9 +8,6 @@ const ServiceList = () => {
     const dispatch = useDispatch();
     const { data } = useSelector((state) => state.services);
 
-   
-   console.log(data);
-
     useEffect(() => {
         dispatch(getServicesAsync());
 

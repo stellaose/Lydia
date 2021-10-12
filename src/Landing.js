@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
 import './Stylesheets/Landing.css';
 import Slider from './Components/Slider/Slider';
+import Footer from './Components/Footer';
+import NavBar from './Components/NavBar/NavBar';
 
 const Landing = () => {
     return(
-        <>
+        <> 
+        <NavBar />
             <div className = 'container'>
                 <div id = 'left'>
                     <h1>Create your own space here.</h1>
@@ -19,7 +22,8 @@ const Landing = () => {
             <div id = 'partners'>
                 <Slider />
             </div>
-            {/* <Footer /> */}
+        <Footer />
+
         </>
     )
 }

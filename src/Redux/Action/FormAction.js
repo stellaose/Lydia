@@ -22,7 +22,6 @@ const Register = (name, preference, knowledge, room, date, price, history) => as
             type: FormType.REGISTER_FAIL,
             payload: error.message
         });
-        console.log(error.response)
     }
     
   };

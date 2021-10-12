@@ -1,11 +1,9 @@
-import React from 'react';
 import '../../Stylesheets/Button.css';
 import { useSelector } from "react-redux";
-
 import { Link, useHistory } from 'react-router-dom';
 
 const Button = () => {
-  const { isAuthenticated } = useSelector((state) => state.userLogin || {});
+  const { isAuthenticated } = useSelector((state) => state.userSignin || {});
   let history = useHistory();
 
   function refreshPage() {
@@ -19,7 +17,7 @@ const Button = () => {
          {isAuthenticated ? (
                 <>
                 <Link to = '/signup'>
-                    <button className = 'btn-menus' onClick = {refreshPage}>Log out </button>
+                    <button className = 'btn-menu' onClick = {refreshPage}>Log out </button>
                 </Link>
                 </>
               ) : (
@@ -27,9 +25,9 @@ const Button = () => {
                 <Link to = '/signup'>
                    <button className = 'btn-menus'>Sign Up </button>
                 </Link>
-        <Link to = '/signin'>
-            <button className = 'btn-menu'>Sign In </button>
-        </Link>
+                <Link to = '/signin'>
+                    <button className = 'btn-menu'>Sign In </button>
+                </Link>
                 </>
               )}
         

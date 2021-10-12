@@ -1,17 +1,28 @@
 import {useState} from 'react';
-import { BiMenuAltRight } from 'react-icons/bi'
-import {AiOutlineClose} from 'react-icons/ai'
-import { Link } from 'react-router-dom';
+import { BiMenuAltRight } from 'react-icons/bi';
+import {AiOutlineClose} from 'react-icons/ai';
+import { Link, useHistory } from 'react-router-dom';
+import { useSelector } from "react-redux";
 
 import '../../Stylesheets/NavBar.css';
 import Button from './Button';
 
 const NavBar = () => {
     const [isMobile, setIsMobile] = useState(false);
+    const { isAuthenticated } = useSelector((state) => state.userSignin || {});
+
+    let history = useHistory();
 
     const handleClick = () => {
         setIsMobile(!isMobile)
     } 
+
+    const refreshPage = () => {
+        localStorage.removeItem("userToken");
+        history.push("/");
+        window.location.reload(false);
+      }
+
     return (
         <>
             <nav className = ' navbar'>
@@ -42,17 +53,23 @@ const NavBar = () => {
                             </Link>
                         </li>  
                         
-                        
-                        <li>
+                        {isAuthenticated ? (
+                            <>
                             <Link to = '/signin' className='mobile' >
-                                <h3>Sign In</h3>
+                                <h3 onClick = {refreshPage}>Log out</h3>
                             </Link>
-                        </li>
-                        <li>
-                            <Link to = '/signup' className='mobile' >
-                                <h3>Sign Up</h3>
-                            </Link>
-                        </li>
+                            </>
+                            ) : (
+                                <>
+                                <Link to = '/signin' className='mobile' >
+                                    <h3>Sign In</h3>
+                                </Link>
+                        
+                                <Link to = '/signup' className='mobile' >
+                                    <h3>Sign Up</h3>
+                                </Link>
+                            </>
+                        )}
                     </ul>
                 <Button />
             </nav>

@@ -8,9 +8,7 @@ import About from './About';
 import Services from './Services';
 import Form from './Form'
 import Contact from './Contact';
-import Footer from './Components/Footer'
 import ProtectedRoute from "./Components/ProtectedRoute.js";
-import NavBar from './Components/NavBar/NavBar';
 import FormData from './FormData';
 import ServiceDetails from './ServiceDetails';
              
@@ -18,7 +16,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <NavBar />
         <div className = 'content' basename="/React">
           <CustomSwitch>
             <Switch>
@@ -43,10 +40,10 @@ function App() {
               <Route exact path = '/data'>
                 <FormData />
               </Route>
-              <Route  path = '/service'>
+              <Route exact path = '/service'>
                 <Services />
               </Route>
-              <Route exact path="/service/:id">
+              <Route exact path='/service/:serviceId'>
                 <ServiceDetails />
               </Route>
               <ProtectedRoute
@@ -56,7 +53,6 @@ function App() {
             </Switch>
           </CustomSwitch>
         </div>
-        <Footer />
       </BrowserRouter>
     </div>
   );

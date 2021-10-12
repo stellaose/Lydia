@@ -10,7 +10,7 @@ const ServiceReducer = (state = initialState, action) => {
   switch (action.type) {
     case ServiceType.SET_SERVICE: {
       const { data } = action;
-      return { ...initialState, data: data.getOneService };
+      return { ...initialState, data};
     }
     case ServiceType.GET_FEATURED: {
       const { data } = action;

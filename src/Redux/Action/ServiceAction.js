@@ -29,12 +29,10 @@ export const getServicesAsync = () => async (dispatch) => {
   }
 };
 
-export const getServiceAsync = (id) => async (dispatch) => {
+export const getServiceAsync = (serviceId) => async (dispatch) => {
   try {
-    let res = await axios.get(`${BaseURL}/service/:serviceId`);
-    console.log(res, "response");
+    let res = await axios.get(`${BaseURL}/service/${serviceId}`);
 
-    console.log( "base url");
     dispatch(getService(res.data));
   } catch (err) {
     console.log(err);
