@@ -3,7 +3,8 @@ import {SigninType} from "../Type/SigninType";
 const savedUser = JSON.parse(localStorage.getItem("userToken") || "{}");
 
 const initialState = {
-  isAuthenticated: false,
+  token: localStorage.getItem('userToken'),
+  isAuthenticated: localStorage.getItem('userToken') ? true : false,
   user: {},
   isLoading: false,
   error: {},
