@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Stylesheets/Landing.css';
-import Slider from './Components/Slider/Slider';
+import Slider from './Slider';
 import Footer from './Components/Footer';
 import NavBar from './Components/NavBar/NavBar';
 

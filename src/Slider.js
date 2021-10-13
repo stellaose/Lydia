@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { SliderData } from './SliderData';
-import BtnSlider from './BtnSlider';
+import { SliderData } from './Components/Slider/SliderData';
+import BtnSlider from './Components/Slider/BtnSlider';
 import { Link } from 'react-router-dom';
-import '../../Stylesheets/Slider.css';
+import './Stylesheets/Slider.css';
 
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(1)
@@ -38,7 +38,7 @@ const Slider = () => {
                             return (
                                 <div key={obj.id} className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
                                     <img 
-                                    src={process.env.PUBLIC_URL + `/Photos/Slide${index + 1}.jpg`} alt= "" 
+                                    src={`${process.env.PUBLIC_URL}../Photos/Slide${index + 1}.jpg`} alt= "" 
                                     />
                                 </div>
                             )
