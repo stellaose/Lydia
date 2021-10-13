@@ -86,10 +86,10 @@ hr{
 
 @media(max-width: 1180px){
     .navbar{
-        margin: -1rem -1rem 3rem ;
+        margin: -1rem -1rem 2.5rem ;
     }
     hr {
-        margin: 1rem 1rem 6rem;
+        margin: 1.5rem 1rem 6rem;
     }
     .navbar_logo img{
         margin-left: 3rem;

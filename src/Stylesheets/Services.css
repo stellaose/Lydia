@@ -1,6 +1,5 @@
 .service-contain {
-    height: 100%;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
 }
 .service-contain > h3{
     font-weight: 700;
@@ -47,8 +46,9 @@ a {
         grid-template-columns: auto auto auto;
         margin: 3rem 2rem;
     }
+   
     .service-contain > h3 {
-        margin: 2rem 0.5rem 0;
+        margin: -4rem 1rem 0;
        font-size: 2.3rem;
     }
     .service-body {
@@ -64,10 +64,9 @@ a {
     .body {
         display: grid;
         grid-template-columns: auto auto;
-        margin: 4rem 2rem;
+        margin: 3rem 2rem;
     }
     .service-contain > h3 {
-        margin: 3rem 0.5rem 0;
         font-size: 2rem;
     }
     .service-body {
@@ -100,6 +99,9 @@ a {
 @media all and (max-width: 960px ){
     .body {
         margin: 4rem 2rem 1rem;
+    }
+    .service-contain > h3 {
+        margin: 2rem 1rem 0rem;
     }
     .service-body{
         width: 21rem;
@@ -142,7 +144,6 @@ a {
     .service-contain > h3 {
         margin: 2rem 0.5rem 1.5rem;
         font-size: 2rem;
-        margin-left: 1rem;
     }
     .body {
         display: block;
@@ -191,8 +192,6 @@ a {
     }
     .bold-color {
         font-size: 1.1rem;
-        /* color: #194416;
-        font-weight: 700; */
     }
 }
 @media all and (max-width: 330px){

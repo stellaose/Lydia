@@ -12,9 +12,9 @@ const ServiceDetails = () => {
     const dispatch = useDispatch();
     const { serviceId } = useParams();
 
-    const { data } = useSelector((state) => state.service);
+    const { data: service } = useSelector((state) => state.service);
 
-    console.log('This is the requested data', data)
+    console.log('This is the requested data', service)
 
     useEffect(() => {
       dispatch(getServiceAsync(serviceId));
@@ -25,7 +25,7 @@ const ServiceDetails = () => {
             <NavBar />
                 <div>
                     <div className = 'product'>
-                        {/* <h1> {data.name} </h1> */}
+                        {/* <h1> {service.service.name} </h1> */}
                     </div>
                 </div>
             <Footer />

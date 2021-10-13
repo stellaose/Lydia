@@ -31,7 +31,11 @@ body{
     .footer{
         margin-top: 10rem;
     }
-    
+    .social-media > p {
+        font-size: 1.2rem;
+        margin: 0.5rem 1.5rem;
+
+    }    
 }
 @media all and (max-width: 360px){
     .social-media > p {
