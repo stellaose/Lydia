@@ -33,9 +33,12 @@ const ServiceDetails = () => {
                         <p>- {service.content3}</p>
                         <p>- {service.content4}</p>
                         <p>- {service.content5}</p>
-                        <Link to = '/checkout'>
-                            <button><h4>Proceed to Checkout</h4></button>
-                        </Link>
+                        <div className = 'button-body'>
+                             <Link to = '/checkout'>
+                                <button><h4>Proceed to Checkout</h4></button>
+                            </Link>
+                        </div>
+                       
                     </div>
                 </div>
             <Footer />

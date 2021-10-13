@@ -1,17 +1,16 @@
 .product-body {
-    margin: 7rem 13rem;
     height: 100vh;
+    margin-bottom: 7rem;
+    padding: 4rem 16rem 1rem;
 }
 .product {
-    height: 100vh;
-    margin: 1rem 1.5rem 2rem;
-    width: 60vw;
-    height: 30rem;
-    display: flex;
+    width: 45rem;
+    height: 37rem;
+    display: block;
     padding: 2rem;
-    flex-direction: column;
     border: 1px solid #194416;
     border-radius: 20px;
+
 }
 .product > h3{ 
     font-size: 2rem;
@@ -21,28 +20,209 @@
 .product > h4 {
     font-size: 1.6rem;
     color: #194416;
-    font-weight: 700;
-
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 .product > p {
-    margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
-button{
+.button-body > a > button {
     width: 15rem;
     height: 3rem;
     border: 1px solid rgb(241, 201, 116);
     color: #194416;
     background: transparent;
     border-radius: 10px;
-    margin: 2rem 16rem 1rem;
+    margin: 2rem 12rem 1rem;
 }
-button:hover {
+.button-body > a > button:hover {
     background: rgb(241, 201, 116);
 }
-button > h4{
+.button-body > a > button > h4{
     font-size: 1.4rem;
 }
 .product:hover {
     border: 1px solid rgb(241, 201, 116);
+}
+@media all and (max-width: 1180px){
+    .product-body {
+        padding: 3rem 14rem 1rem;
+        margin-bottom: 6rem;
+
+    }
+    .product {
+        width: 42rem;
+        height: 37rem;
+    }
+    .button-body > a > button {
+        margin: 1.5rem 12rem 1rem;
+    }
+}
+@media all and (max-width: 1080px){
+    .product-body {
+        padding: 2rem 11rem 1rem;
+        margin-bottom: 6rem;
+    }
+    .product {
+        width: 41rem;
+    }
+    .product > h3{ 
+        font-size: 1.8rem;
+    }
+    
+    .product > h4 {
+        font-size: 1.5rem;
+    }
+    .product > p {
+        font-size: 1.1rem;
+    }
+    .button-body > a > button {
+        width: 13rem;
+        height: 2.8rem;
+        margin: 2rem 10rem 1rem;
+    }
+    .button-body > a > button > h4{
+        font-size: 1.3rem;
+    }
+}
+@media all and (max-width: 960px){
+    .product-body {
+        padding: 3rem 10rem 1rem;
+    }
+    .product {
+        width: 35rem;
+        height: 36rem;
+    }
+    .button-body > a > button {
+        width: 12rem;
+        height: 2.6rem;
+        margin: 1.5rem 10rem 1rem;
+    }
+    .button-body > a > button > h4{
+        font-size: 1.2rem;
+    }
+}
+@media all and (max-width: 800px){
+    .product-body {
+        padding: 3rem 6rem 1rem;
+    }
+    .product {
+        width: 32rem;
+        height: 37rem;
+    }
+    .button-body > a > button {
+        margin: 1rem 8rem;
+    }
+}
+@media all and (max-width: 670px){
+    .product-body {
+        padding: 3rem 6rem 1rem;
+    }
+    .product {
+        width: 27rem;
+        height: 38rem;
+    }
+    .button-body > a > button {
+       margin: 1rem 5rem;
+    }
+}
+@media all and (max-width: 550px){
+    .product-body {
+        padding: 3rem 4rem 1rem;
+    }
+    .product {
+        width: 23rem;
+        height: 36rem;
+        padding: 1rem 0.8rem;
+    }
+    .product > h3{ 
+        font-size: 1.6rem;
+    }
+    
+    .product > h4 {
+        font-size: 1.3rem;
+    }
+    .product > p {
+        font-size: 1rem;
+    }
+    .button-body > a > button {
+        width: 11rem;
+        height: 2.5rem;
+        margin: 1rem 5rem;
+    }
+    .button-body > a > button > h4{
+        font-size: 1.1rem;
+    }
+}
+@media all and (max-width: 420px){
+    .product-body {
+        padding: 3rem 2.5rem 1rem;
+        margin-bottom: 5rem;
+    }
+    .product {
+        width: 18rem;
+        height: 36rem;
+    }
+    .product > h3{ 
+        font-size: 1.4rem;
+    }
+    
+    .product > h4 {
+        font-size: 1.2rem;
+    }
+    .product > p {
+        font-size: 0.9rem;
+    }
+    .button-body > a > button {
+        width: 9rem;
+        height: 2.2rem;
+        margin: 1rem 3rem;
+    }
+    .button-body > a > button > h4{
+        font-size: 1rem;
+    }
+}
+@media all and (max-width: 370px){
+  
+    .product {
+        width: 16rem;
+        height: 40rem;
+    }
+}
+@media all and (max-width: 320px ){
+    .product-body {
+        padding: 3rem 1.5rem 1rem;
+        margin-bottom: 5rem;
+    }
+    .product {
+        width: 95%;
+        height: 38rem;
+    }
+    .product > h3{ 
+        font-size: 1.3rem;
+    }
+    
+    .product > h4 {
+        font-size: 1.1rem;
+    }
+    .product > p {
+        font-size: 0.8rem;
+    }
+    .button-body > a > button {
+        width: 8rem;
+        height: 2rem;
+        margin: 1rem 2rem;
+    }
+    .button-body > a > button > h4{
+        font-size: 0.9rem;
+    }
+}
+@media all and (max-width: 290px ){
+    .product-body {
+        padding: 2rem 1.5rem 1rem;
+    }
+    .product {
+        width: 14rem;
+        height: 38rem;
+    }
 }
