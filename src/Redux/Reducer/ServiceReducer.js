@@ -1,7 +1,7 @@
 import { ServiceType } from "../Type";
 
 const initialState = {
-  data: null,
+  data: {},
   pending: false,
   error: null,
 };
@@ -11,10 +11,6 @@ const ServiceReducer = (state = initialState, action) => {
     case ServiceType.SET_SERVICE: {
       const { data } = action;
       return { ...initialState, data};
-    }
-    case ServiceType.GET_FEATURED: {
-      const { data } = action;
-      return { ...initialState, data };
     }
     case ServiceType.SET_PENDING: {
       const { pending } = action;

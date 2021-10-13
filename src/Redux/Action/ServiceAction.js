@@ -33,7 +33,7 @@ export const getServiceAsync = (serviceId) => async (dispatch) => {
   try {
     let res = await axios.get(`${BaseURL}/service/${serviceId}`);
 
-    dispatch(getService(res.data));
+    dispatch(getService(res.data.service));
   } catch (err) {
     console.log(err);
   }

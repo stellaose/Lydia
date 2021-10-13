@@ -1,7 +1,7 @@
 import { ServicesTypes } from "../Type";
 
 const initialState = {
-  data: null,
+  data: [],
   pending: false,
   error: null,
 };

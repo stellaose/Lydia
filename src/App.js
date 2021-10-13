@@ -47,7 +47,7 @@ function App() {
                 <ServiceDetails />
               </Route>
               <ProtectedRoute
-                path="/checkout"
+               exact path="/checkout"
                 component={Checkout}
               />
             </Switch>
