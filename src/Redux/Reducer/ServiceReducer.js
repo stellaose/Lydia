@@ -1,7 +1,8 @@
-import { ServiceType } from "../Type";
+import { ServiceType, ReviewsType } from "../Type";
 
 const initialState = {
   data: {},
+  reviews: [],
   pending: false,
   error: null,
 };
@@ -11,6 +12,10 @@ const ServiceReducer = (state = initialState, action) => {
     case ServiceType.SET_SERVICE: {
       const { data } = action;
       return { ...initialState, data};
+    }
+    case ReviewsType.SET_REVIEW: {
+      const { data } = action;
+      return { ...state, reviews: [...state.reviews, data] };
     }
     case ServiceType.SET_PENDING: {
       const { pending } = action;

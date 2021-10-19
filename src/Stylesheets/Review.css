@@ -1,0 +1,68 @@
+.createReview {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.createReview > header {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-left: -2rem;
+    color: #194416;
+}
+.reviewForm {
+    margin: 2rem 9rem 4rem;
+    width: 30rem;
+    height: 36rem;
+    padding: 2rem;
+    border: 1px solid #194416;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.reviewForm:hover {
+    border: 1px solid rgb(241, 201, 116);
+    cursor: pointer;
+}
+.reviewForm > .label-review {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.reviewForm > label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.reviewForm > input, .reviewForm > textarea {
+    border: 1px solid #194416;
+    border-radius: 8px;
+    outline: none;
+}
+.reviewForm > input {
+    height: 2rem;
+    margin-bottom: 1rem;
+    padding: 2px 20px;
+
+}
+.reviewForm > input:focus, .reviewForm > textarea:focus {
+    border: 1px solid rgb(241, 201, 116);
+}
+.reviewForm > textarea {
+    height: 6rem;
+    margin-bottom: 2rem;
+    padding: 4px 20px;
+}
+.submitReview {
+    width: 15rem;
+    height: 2rem;
+    border: 1px solid rgb(241, 201, 116);
+    color: #194416;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 2rem 5rem 1rem;
+}
+.submitReview:hover {
+    background: rgb(241, 201, 116);
+}

@@ -1,7 +1,7 @@
 import axios from "axios";
 import BaseURL from "../../Utils/BaseUrl";
 
-import { ServicesTypes, ServiceType } from "../Type";
+import { ServicesTypes, ServiceType, ReviewsType } from "../Type";
 
 const getServices = (data) => {
   return {
@@ -17,6 +17,14 @@ const getService = (data) => {
     pending: true
   };
 };
+
+const createReview = (data) => {
+  return {
+    type: ReviewsType.SET_REVIEW,
+    data: data,
+  };
+};
+
 
 export const getServicesAsync = () => async (dispatch) => {
   try {
@@ -38,3 +46,16 @@ export const getServiceAsync = (serviceId) => async (dispatch) => {
     console.log(err);
   }
 };
+
+export const createReviewAsync = (data) => async (dispatch) => {
+  const { serviceId } = data;
+  try {
+    let res = await axios.post(`${BaseURL}/service/review/${serviceId}`);
+
+    console.log(BaseURL, "base url");
+    dispatch(createReview(res.data.data));
+  } catch (err) {
+    console.log(err.message);
+  }
+};
+
