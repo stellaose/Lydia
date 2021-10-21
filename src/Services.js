@@ -1,5 +1,5 @@
 import ServiceList from "./ServiceList";
-import './Stylesheets/Service.css';
+import './Stylesheets/Services.css';
 import Footer from './Components/Footer';
 import NavBar from './Components/NavBar/NavBar';
 

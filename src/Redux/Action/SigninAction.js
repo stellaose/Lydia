@@ -2,7 +2,7 @@ import axios from "axios";
 import BaseURL from "../../Utils/BaseUrl";
 import { SigninType } from "../Type/SigninType";
 
-const Signin = (email, password, history) => async (dispatch) => {
+export const Signin = (email, password, history) => async (dispatch) => {
   dispatch({ type: SigninType.SIGNIN_REQUEST });
   try {
     const { data } = await axios.post(`${BaseURL}/user/login`, {
@@ -20,4 +20,13 @@ const Signin = (email, password, history) => async (dispatch) => {
   }
 };
 
-export default Signin;
+export const Signout = (history) => async (dispatch) => {
+ try{
+    dispatch({ type: SigninType.SIGNOUT});
+      history.push("/");
+      localStorage.removeItem("userToken")
+ }
+ catch(err){
+    console.log(err)
+ } 
+}

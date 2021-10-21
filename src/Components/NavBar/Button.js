@@ -1,15 +1,20 @@
 import '../../Stylesheets/Button.css';
 import { useSelector } from "react-redux";
 import { Link, useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { Signout } from '../../Redux/Action/SigninAction';
+
 
 const Button = () => {
   const { isAuthenticated } = useSelector((state) => state.userSignin || {});
   let history = useHistory();
+  const dispatch = useDispatch();
+  
 
-  function refreshPage() {
-     localStorage.removeItem("userToken");
-     history.push("/");
-     window.location.reload(false);
+  function refreshPage(e) {
+    e.preventDefault();
+    
+    dispatch(Signout(history));
    }
          
   return (

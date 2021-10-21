@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory, Link } from "react-router-dom";
-import Signin from './Redux/Action/SigninAction';
+import {Signin} from './Redux/Action/SigninAction';
 import GoogleLoginBtn from './Components/GoogleLoginBtn';
 import NavBar from './Components/NavBar/NavBar';
 
