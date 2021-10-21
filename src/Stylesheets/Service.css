@@ -29,7 +29,6 @@
     width: 15rem;
     height: 3rem;
     border: 1px solid rgb(241, 201, 116);
-    color: #194416;
     background: transparent;
     border-radius: 10px;
     margin: 2rem 12rem 1rem;
@@ -39,6 +38,7 @@
 }
 .button-body > a > button > h4{
     font-size: 1.4rem;
+    color: #194416;
 }
 .product:hover {
     border: 1px solid rgb(241, 201, 116);
