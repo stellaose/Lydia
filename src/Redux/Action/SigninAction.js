@@ -12,7 +12,6 @@ export const Signin = (email, password, history) => async (dispatch) => {
     dispatch({ type: SigninType.SIGNIN_SUCCESS, payload: data });
     history.push("/");
     localStorage.setItem("userToken", JSON.stringify(data));
-
   } catch (err) {
     dispatch({
       type: SigninType.SIGNIN_FAIL,
@@ -21,24 +20,21 @@ export const Signin = (email, password, history) => async (dispatch) => {
   }
 };
 
-export const GoogleSignin = ( response, history) => async (dispatch) => {
+export const GoogleSignin = (response, history) => async (dispatch) => {
+
   try{
     const { data } = await axios.post(`${BaseURL}/user/google`, {
       tokenId: response.tokenId
     })
-    .then(response => {
-          console.log('Google login success', response);
-       });;
 
-    dispatch({ type: SigninType.GOOGLE_SIGNIN })
-      history.push("/")
-      localStorage.setItem("tokenId", JSON.stringify( data));
+    dispatch({ type: SigninType.GOOGLE_SIGNIN, payload: data });
+    history.push("/");
+    localStorage.setItem("userToken", JSON.stringify(data));
   }
-  catch (err){
+  catch(err){
     console.log(err)
   }
 }
-
 export const Signout = (history) => async (dispatch) => {
  try{
     dispatch({ type: SigninType.SIGNOUT});
