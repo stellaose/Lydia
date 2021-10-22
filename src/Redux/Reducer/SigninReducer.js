@@ -13,7 +13,8 @@ const initialState = {
 const SigninReducer = (state = initialState, action) => {
   switch (action.type) {
     case SigninType.SIGNIN_REQUEST:
-      return {  ...state, 
+      return {  
+                ...state, 
                 isLoading: true 
           };
 

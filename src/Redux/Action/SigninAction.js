@@ -25,7 +25,8 @@ export const GoogleSignin = ( response, history) => async (dispatch) => {
   try{
     const { data } = await axios.post(`${BaseURL}/user/google`, {
       tokenId: response.tokenId
-    }).then(response => {
+    })
+    .then(response => {
           console.log('Google login success', response);
        });;
 
