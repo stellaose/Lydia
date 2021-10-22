@@ -1,18 +1,25 @@
 import GoogleLogin from "react-google-login";
-import axios from "axios";
+// import axios from "axios";
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import { GoogleSignin } from "../Redux/Action/SigninAction";
 // import BaseURL from "../Utils/BaseUrl";
 
 const GoogleLoginBtn = () => {
+    const dispatch = useDispatch()
+    const history = useHistory()
+
     const responseSuccessGoogle = (response) => {
         console.log(response);
+        dispatch(GoogleSignin(response, history))
 
-        axios({
-            method: 'POST',
-            url: 'http://localhost:4000/user/google',
-            data: {tokenId: response.tokenId}
-        }).then(response => {
-            console.log('Google login success', response);
-        });
+        // axios({
+        //     method: 'POST',
+        //     url: 'http://localhost:4000/user/google',
+        //     data: {tokenId: response.tokenId}
+        // }).then(response => {
+        //     console.log('Google login success', response);
+        // });
     }
 
     const responseErrorGoogle = () => {

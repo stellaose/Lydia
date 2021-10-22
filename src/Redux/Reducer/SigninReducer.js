@@ -25,6 +25,14 @@ const SigninReducer = (state = initialState, action) => {
           user: action.payload,
       };
 
+    case SigninType.GOOGLE_SIGNIN: 
+      return {
+        ...state,
+        isLoading: false,
+        isAuthenticated: true,
+        user: action.payload,
+      };
+
     case SigninType.SIGNIN_FAIL:
       return { 
               ...state, 
