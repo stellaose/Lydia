@@ -74,7 +74,7 @@ const ReviewForm = ({ serviceId }) => {
             onChange={handleChange}
             className = 'reviewComment'
           ></textarea>
-          <button className = 'submitReview'>Add Review</button>
+          <button className = 'submitReview' onClick = { createReviewAsync}>Add Review</button>
         </form>
       </div>
     </>

@@ -41,7 +41,7 @@ export const getServiceAsync = (serviceId) => async (dispatch) => {
   try {
     let res = await axios.get(`${BaseURL}/service/${serviceId}`);
 
-    dispatch(getService(res.data.service));
+    dispatch(getService(res.data.data));
   } catch (err) {
     console.log(err);
   }
@@ -50,10 +50,10 @@ export const getServiceAsync = (serviceId) => async (dispatch) => {
 export const createReviewAsync = (data) => async (dispatch) => {
   const { serviceId } = data;
   try {
-    let res = await axios.post(`${BaseURL}/service/review/${serviceId}`);
+    let res = await axios.post(`${BaseURL}/service/${serviceId}/review`);
 
     console.log(BaseURL, "base url");
-    dispatch(createReview(res.data.data));
+    dispatch(createReview(res.data.addReview));
   } catch (err) {
     console.log(err.message);
   }

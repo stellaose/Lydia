@@ -60,7 +60,7 @@
     }
     .product {
         width: 42rem;
-        height: 37rem;
+        height: 38rem;
     }
     .button-body > a > button {
         margin: 1.5rem 12rem 1rem;
@@ -99,7 +99,7 @@
     }
     .product {
         width: 35rem;
-        height: 36rem;
+        /* height: 36rem; */
     }
     .button-body > a > button {
         width: 12rem;

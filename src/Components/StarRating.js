@@ -32,7 +32,7 @@ const StarRating = ({ handleRate }) => {
                 }}
                 size={20}
                 className = 'star'
-                color={ratingNumber <= (hover || rating) ? "#000" : "#e4e5e9"}
+                color={ratingNumber <= (hover || rating) ? "#194416" : "#e4e5e9"}
               />
             </label>
           );

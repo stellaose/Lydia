@@ -11,7 +11,7 @@ const ServiceReducer = (state = initialState, action) => {
   switch (action.type) {
     case ServiceType.SET_SERVICE: {
       const { data } = action;
-      return { ...initialState, data};
+      return { ...initialState, data: data.service, reviews: data.reviews};
     }
     case ReviewsType.SET_REVIEW: {
       const { data } = action;
