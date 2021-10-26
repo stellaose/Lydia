@@ -1,12 +1,10 @@
 import { useState } from "react";
-import StarRating from "./StarRating";
 import { createReviewAsync } from "../Redux/Action/ServiceAction";
 import { useDispatch } from "react-redux";
 import '../Stylesheets/Review.css';
 
 
 const initForm = {
-  rating: 0,
   title: "",
   comment: "",
   author: "",
@@ -34,21 +32,11 @@ const ReviewForm = ({ serviceId }) => {
     }));
   };
 
-  const handleRate = (rate) => {
-    setForm((prevForm) => ({
-      ...prevForm,
-      rating: rate,
-    }));
-  };
-
   return (
     <>
       <div className = 'createReview'>
         <header>Post a review</header>
         <form className = 'reviewForm' onSubmit={handleSubmit}>
-          <label htmlFor="rating" className = 'label-review'>Rate this service</label>
-          <StarRating handleRate={handleRate}/>
-
           <label htmlFor="author">Author</label>
           <input
             type="text"
@@ -74,7 +62,7 @@ const ReviewForm = ({ serviceId }) => {
             onChange={handleChange}
             className = 'reviewComment'
           ></textarea>
-          <button className = 'submitReview' onClick = { createReviewAsync}>Add Review</button>
+          <button className = 'submitReview'>Add Review</button>
         </form>
       </div>
     </>

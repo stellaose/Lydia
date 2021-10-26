@@ -53,7 +53,7 @@ export const createReviewAsync = (data) => async (dispatch) => {
     let res = await axios.post(`${BaseURL}/service/${serviceId}/review`);
 
     console.log(BaseURL, "base url");
-    dispatch(createReview(res.data.addReview));
+    dispatch(createReview(res.data.data));
   } catch (err) {
     console.log(err.message);
   }

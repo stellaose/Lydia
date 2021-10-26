@@ -1,15 +1,15 @@
 .product-body {
     margin-bottom: 7rem;
-    padding: 4rem 17rem 1rem;
+    padding: 4rem 20rem 1rem;
 }
 .product {
     width: 45rem;
-    height: 37rem;
+    height: 38rem;
     display: block;
     padding: 2rem;
     border: 1px solid #194416;
     border-radius: 20px;
-
+    margin-bottom: 3rem;
 }
 .product > h3{ 
     font-size: 2rem;
@@ -46,7 +46,7 @@
 .review-content {
     margin-top: 3rem;
 }
-.review-content > h2 {
+.review-content > h2, .reviewList > h3 {
     font-size: 2rem;
     color: #194416;
     font-weight: 700;
@@ -68,7 +68,7 @@
 }
 @media all and (max-width: 1080px){
     .product-body {
-        padding: 2rem 11rem 1rem;
+        padding: 2rem 12rem 1rem;
         margin-bottom: 6rem;
     }
     .product {
@@ -95,7 +95,7 @@
 }
 @media all and (max-width: 960px){
     .product-body {
-        padding: 3rem 10rem 1rem;
+        padding: 3rem 9rem 1rem;
     }
     .product {
         width: 35rem;
@@ -112,7 +112,7 @@
 }
 @media all and (max-width: 800px){
     .product-body {
-        padding: 3rem 6rem 1rem;
+        padding: 3rem 5rem 1rem;
     }
     .product {
         width: 32rem;
@@ -124,7 +124,7 @@
 }
 @media all and (max-width: 670px){
     .product-body {
-        padding: 3rem 6rem 1rem;
+        padding: 3rem 4.5rem 1rem;
     }
     .product {
         width: 27rem;
@@ -133,14 +133,17 @@
     .button-body > a > button {
        margin: 1rem 5rem;
     }
+    .reviewList > h3{
+        font-size: 1.6rem;
+    }
 }
 @media all and (max-width: 550px){
     .product-body {
-        padding: 3rem 4rem 1rem;
+        padding: 3rem 2.5rem 1rem;
     }
     .product {
         width: 23rem;
-        height: 36rem;
+        height: 37rem;
         padding: 1rem 0.8rem;
     }
     .product > h3{ 
@@ -164,7 +167,7 @@
 }
 @media all and (max-width: 420px){
     .product-body {
-        padding: 3rem 2.5rem 1rem;
+        padding: 3rem 2rem 1rem;
         margin-bottom: 5rem;
     }
     .product {
@@ -189,9 +192,11 @@
     .button-body > a > button > h4{
         font-size: 1rem;
     }
+    .reviewList > h3{
+        font-size: 1.4rem;
+    }
 }
 @media all and (max-width: 370px){
-  
     .product {
         width: 16rem;
         height: 40rem;
