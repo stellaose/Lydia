@@ -50,7 +50,7 @@ export const getServiceAsync = (serviceId) => async (dispatch) => {
 export const createReviewAsync = (data) => async (dispatch) => {
   const { serviceId } = data;
   try {
-    let res = await axios.post(`${BaseURL}/service/${serviceId}/review`);
+    let res = await axios.post(`${BaseURL}/service/${serviceId}/review`, data);
 
     console.log(BaseURL, "base url");
     dispatch(createReview(res.data.data));

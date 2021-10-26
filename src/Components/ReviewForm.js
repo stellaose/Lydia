@@ -42,7 +42,7 @@ const ReviewForm = ({ serviceId }) => {
             type="text"
             name="author"
             id="author"
-            className = 'reviewTitle'
+            className = 'review-title'
             value={form.author}
             onChange={handleChange}
           />
@@ -51,7 +51,7 @@ const ReviewForm = ({ serviceId }) => {
             type="text"
             name="title"
             id="title"
-            className = 'reviewTitle'
+            className = 'review-title'
             value={form.title}
             onChange={handleChange}
           />
