@@ -235,6 +235,7 @@ hr{
         height: 24rem;
         border-radius: 0;
         margin-left: -1rem;
+        margin-right: -2rem;
         object-fit: cover;
       }  
         .btn-slide img {
@@ -406,6 +407,7 @@ hr{
     }
     .slide img {
         height: 14rem;
+        width: 100%;
     }
     .btn-slide {
         width: 30px;

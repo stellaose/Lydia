@@ -1,12 +1,15 @@
+import NavBar from './Components/NavBar/NavBar';
+import Footer from './Components/Footer';
 import './Stylesheets/Checkout.css';
-import Service from './ServiceDetails'
 
 const Checkout = () => {
     return (
         <>
-           <div>
-               <Service />
-           </div> 
+            <NavBar />
+                <div className = 'checkout-body'>
+                    hhhhhh
+                </div> 
+           <Footer />
         </>
     )
 }
