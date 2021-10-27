@@ -102,8 +102,9 @@ hr{
   .title a{
     text-decoration: none;
   }
-  .title a p {
-      font-weight: 1.8rem;
+  .title > a > p {
+      font-size: 1.5rem;
+      font-weight: 600;
       text-align: center;
       color: #194416;
   }
@@ -114,18 +115,18 @@ hr{
     justify-content: center;
   }
   .service > h2{
-        font-size: 2.2rem;
-        text-align: center;
-        font-weight: 800;
-        color: #194416;
-        border-bottom: 4px solid rgb(241, 201, 116);
-        padding: 1rem 1rem 0.5rem;
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 800;
+    color: #194416;
+    border-bottom: 4px solid rgb(241, 201, 116);
+    padding: 1rem 1rem 0.5rem;
   }
   .service > p {
-      font-size: 1.5rem;
-      font-weight: 500;
-      padding: 0 1rem;
-      margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 1rem;
+    margin-left: 1rem;
   }
   @media all and (max-width: 1180px){
     .container > hr {
@@ -448,14 +449,13 @@ hr{
       }
       .title > a > p {
         margin-bottom: 2rem;
+        font-size: 1.1rem;
+        margin-left: -3rem;
       }
       .service {
         margin-left: -2rem;
       }
       .service > h2 {
         font-size: 1.8rem;
-      }
-      .service > p {
-        font-size: 1rem;
       }
 }
