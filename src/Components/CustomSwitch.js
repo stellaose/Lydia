@@ -5,7 +5,7 @@ import TopBarProgress from "react-topbar-progress-indicator";
 import React from 'react'
 
 // eslint-disable-next-line react/prop-types
-function CustomSwitch({ children }) {
+const CustomSwitch = ({ children }) => {
     const [progress, setProgress] = useState(false);
     const [prevLoc, setPrevLoc] = useState("");
     const location = useLocation();

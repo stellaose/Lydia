@@ -1,4 +1,5 @@
-// import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
+import { PostToCheckout } from "./Redux/Action/CheckoutAction";
 import { Link } from "react-router-dom";
 import { VscDebugStackframeDot } from 'react-icons/vsc';
 import { useParams } from 'react-router';
@@ -9,7 +10,7 @@ import './Stylesheets/Service.css';
 const ServiceScreen = ({ service, reviews}) => {
     const { name, description, price, content1, content2, content3, content4, content5 } = service
  
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch();
     const { serviceId } = useParams();
 
     return (
@@ -26,10 +27,12 @@ const ServiceScreen = ({ service, reviews}) => {
                         <p><VscDebugStackframeDot /> {content5}</p>
 
                         <div className = 'button-body'>
-                             <Link to = '/checkout'>
-                                {/* <button onClick = {() => {PostToCart}}><h4>Proceed to Checkout</h4></button> */}
-                                <button><h4>Proceed to Checkout</h4></button>
-                            </Link>
+                            <button onClick = {() => dispatch(PostToCheckout(serviceId))}>
+                                <Link to = '/checkout'>
+                                    <h4>Proceed to Checkout</h4>
+                                </Link>
+                            </button>
+                                {/* <button><h4>Proceed to Checkout</h4></button> */}
                         </div>
                     </div>
 

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useState, useMemo } from 'react';
+import { useDispatch, useSelector} from 'react-redux';
 import { useHistory, Link } from "react-router-dom";
 import {Signin} from './Redux/Action/SigninAction';
 import GoogleLoginBtn from './Components/GoogleLoginBtn';
@@ -16,6 +16,14 @@ const Login = () => {
     const history = useHistory();
 
     const {email, password} = signinInfo;
+
+    const { isAuthenticated } = useSelector((state) => state.userSignin);
+
+    useMemo(() => {
+        if(isAuthenticated){
+            history.push('/checkout')
+        }
+    }, [isAuthenticated, history])
 
     const handleInput = (e) => {
         const { name, value } = e.target;

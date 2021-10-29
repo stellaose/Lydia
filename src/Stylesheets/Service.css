@@ -25,18 +25,19 @@
 .product > p {
     font-size: 1.2rem;
 }
-.button-body > a > button {
+.button-body > button  {
     width: 15rem;
     height: 3rem;
     border: 1px solid rgb(241, 201, 116);
     background: transparent;
     border-radius: 10px;
+    padding: 0.5rem;
     margin: 2rem 12rem 1rem;
 }
-.button-body > a > button:hover {
+.button-body > button:hover {
     background: rgb(241, 201, 116);
 }
-.button-body > a > button > h4{
+.button-body > button > a > h4{
     font-size: 1.4rem;
     color: #194416;
 }
@@ -62,7 +63,7 @@
         width: 42rem;
         height: 38rem;
     }
-    .button-body > a > button {
+    .button-body > button > a  {
         margin: 1.5rem 12rem 1rem;
     }
 }
@@ -84,12 +85,12 @@
     .product > p {
         font-size: 1.1rem;
     }
-    .button-body > a > button {
+    .button-body > button > a{
         width: 13rem;
         height: 2.8rem;
         margin: 2rem 10rem 1rem;
     }
-    .button-body > a > button > h4{
+    .button-body > button > a > h4{
         font-size: 1.3rem;
     }
 }
@@ -101,12 +102,12 @@
         width: 35rem;
         /* height: 36rem; */
     }
-    .button-body > a > button {
+    .button-body > button > a {
         width: 12rem;
         height: 2.6rem;
         margin: 1.5rem 10rem 1rem;
     }
-    .button-body > a > button > h4{
+    .button-body >  button > a > h4{
         font-size: 1.2rem;
     }
 }
@@ -118,7 +119,7 @@
         width: 32rem;
         height: 37rem;
     }
-    .button-body > a > button {
+    .button-body > button > a{
         margin: 1rem 8rem;
     }
 }
@@ -130,7 +131,7 @@
         width: 27rem;
         height: 38rem;
     }
-    .button-body > a > button {
+    .button-body > button > a{
        margin: 1rem 5rem;
     }
     .reviewList > h3{
@@ -156,12 +157,12 @@
     .product > p {
         font-size: 1rem;
     }
-    .button-body > a > button {
+    .button-body > button > a{
         width: 11rem;
         height: 2.5rem;
         margin: 1rem 5rem;
     }
-    .button-body > a > button > h4{
+    .button-body > button > a > h4{
         font-size: 1.1rem;
     }
 }
@@ -184,12 +185,12 @@
     .product > p {
         font-size: 0.9rem;
     }
-    .button-body > a > button {
+    .button-body > button > a {
         width: 9rem;
         height: 2.2rem;
         margin: 1rem 3rem;
     }
-    .button-body > a > button > h4{
+    .button-body > button > a > h4{
         font-size: 1rem;
     }
     .reviewList > h3{
@@ -221,12 +222,12 @@
     .product > p {
         font-size: 0.8rem;
     }
-    .button-body > a > button {
+    .button-body > button > a{
         width: 8rem;
         height: 2rem;
         margin: 1rem 2rem;
     }
-    .button-body > a > button > h4{
+    .button-body > button > a > h4{
         font-size: 0.9rem;
     }
 }

@@ -1,6 +1,6 @@
 import Landing from './Landing';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import CustomSwitch from "./Components/CustomSwitch.js";
+// import CustomSwitch from "./Components/CustomSwitch.js";
 import Login from './Signin';
 import Signup from './Signup';
 import Checkout from './Checkout';
@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <div className = 'content' basename="/React">
-          <CustomSwitch>
+          {/* <CustomSwitch> */}
             <Switch>
               <Route exact path = '/'>
                 <Landing />
@@ -51,7 +51,7 @@ function App() {
                 component={Checkout}
               />
             </Switch>
-          </CustomSwitch>
+          {/* </CustomSwitch> */}
         </div>
       </BrowserRouter>
     </div>

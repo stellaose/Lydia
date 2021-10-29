@@ -9,7 +9,7 @@ function ProtectedRoute({ component: Component }) {
         if (!userToken) {
             return (
                 <Redirect
-                to={{ pathname: "/signup", state: { from: props.location } }}
+                to={{ pathname: "/signin", state: { from: props.location } }}
                 />
                 );
             } else {
