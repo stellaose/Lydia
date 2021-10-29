@@ -32,7 +32,6 @@ const ServiceScreen = ({ service, reviews}) => {
                                     <h4>Proceed to Checkout</h4>
                                 </Link>
                             </button>
-                                {/* <button><h4>Proceed to Checkout</h4></button> */}
                         </div>
                     </div>
 

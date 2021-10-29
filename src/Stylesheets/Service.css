@@ -25,7 +25,7 @@
 .product > p {
     font-size: 1.2rem;
 }
-.button-body > button  {
+.button-body > button {
     width: 15rem;
     height: 3rem;
     border: 1px solid rgb(241, 201, 116);
@@ -63,7 +63,7 @@
         width: 42rem;
         height: 38rem;
     }
-    .button-body > button > a  {
+    .button-body > button   {
         margin: 1.5rem 12rem 1rem;
     }
 }
@@ -85,7 +85,7 @@
     .product > p {
         font-size: 1.1rem;
     }
-    .button-body > button > a{
+    .button-body > button {
         width: 13rem;
         height: 2.8rem;
         margin: 2rem 10rem 1rem;
@@ -102,7 +102,7 @@
         width: 35rem;
         /* height: 36rem; */
     }
-    .button-body > button > a {
+    .button-body > button {
         width: 12rem;
         height: 2.6rem;
         margin: 1.5rem 10rem 1rem;
@@ -119,7 +119,7 @@
         width: 32rem;
         height: 37rem;
     }
-    .button-body > button > a{
+    .button-body > button {
         margin: 1rem 8rem;
     }
 }
@@ -131,7 +131,7 @@
         width: 27rem;
         height: 38rem;
     }
-    .button-body > button > a{
+    .button-body > button {
        margin: 1rem 5rem;
     }
     .reviewList > h3{
@@ -157,7 +157,7 @@
     .product > p {
         font-size: 1rem;
     }
-    .button-body > button > a{
+    .button-body > button {
         width: 11rem;
         height: 2.5rem;
         margin: 1rem 5rem;
@@ -185,13 +185,13 @@
     .product > p {
         font-size: 0.9rem;
     }
-    .button-body > button > a {
+    .button-body > button  {
         width: 9rem;
-        height: 2.2rem;
+        height: 2.3rem;
         margin: 1rem 3rem;
     }
     .button-body > button > a > h4{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .reviewList > h3{
         font-size: 1.4rem;
@@ -199,8 +199,19 @@
 }
 @media all and (max-width: 370px){
     .product {
-        width: 16.5rem;
+        width: 17.5rem;
         height: 40rem;
+    }
+    .button-body > button {
+        width: 9rem;
+        height: 2rem;
+        margin: 1rem;
+    }
+    .button-body > button > a > h4{
+        font-size: 0.8rem;
+    }
+    .reviewList > h3{
+        font-size: 1.4rem;
     }
 }
 @media all and (max-width: 320px ){
@@ -209,7 +220,7 @@
         margin-bottom: 5rem;
     }
     .product {
-        width: 95%;
+        width: 97%;
         height: 38rem;
     }
     .product > h3{ 
@@ -222,21 +233,24 @@
     .product > p {
         font-size: 0.8rem;
     }
-    .button-body > button > a{
+    .button-body > a > button {
         width: 8rem;
         height: 2rem;
         margin: 1rem 2rem;
     }
-    .button-body > button > a > h4{
-        font-size: 0.9rem;
+    .button-body > a > button > h4{
+        font-size: 0.7rem;
     }
 }
 @media all and (max-width: 290px ){
     .product-body {
-        padding: 2rem 1.5rem 1rem;
+        padding: 2rem 1rem 1rem;
     }
     .product {
-        width: 14rem;
+        width: 14.5rem;
         height: 38rem;
+    }
+    .button-body >  button {
+        margin: 1rem 2rem;
     }
 }
