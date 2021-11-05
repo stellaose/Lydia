@@ -1,17 +1,17 @@
-import { CheckoutTypes } from "../type/CheckoutType";
+import { CheckoutType } from "../Type/CheckoutType";
 
 const initialState = {
   services: [],
   pending: false
 };
 
-export const cartReducers = (state = initialState, action) => {
+const CheckoutReducer = (state = initialState, action) => {
   switch (action.type) {
-    case CheckoutTypes.ADD_TO_CHECKOUT: {
+    case CheckoutType.ADD_TO_CHECKOUT: {
       const { data } = action;
       return { ...initialState, data };
     }
-    case CheckoutTypes.SET_PENDING: {
+    case CheckoutType.SET_PENDING: {
       const { pending } = action;
       return { ...initialState, pending };
     }
@@ -19,3 +19,5 @@ export const cartReducers = (state = initialState, action) => {
       return state;
   }
 }
+
+export default CheckoutReducer

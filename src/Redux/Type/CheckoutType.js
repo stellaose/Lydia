@@ -1,4 +1,4 @@
-export const CheckoutTypes = {
+export const CheckoutType = {
     SET_PENDING: "SET_CHECKOUT_PENDING",
     ADD_TO_CHECKOUT: "ADD_TO_CHECKOUT",
     REMOVE_FROM_CHECKOUT: "REMOVE_FROM_CHECKOUT"
