@@ -1,5 +1,6 @@
 .service-contain {
     margin-bottom: 5rem;
+    min-height: 100vh;
 }
 .service-contain > h3{
     font-weight: 700;
