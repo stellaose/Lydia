@@ -136,7 +136,7 @@ const FormData = () => {
               <div className = 'form-data'>
                 <label htmlFor = 'room'>
                  {submitted && !values.room ? (
-                    <span>Please select at least one</span>
+                    <span>Please state at least one</span>
                   ) :  null}
                 <div>
                     <p >
@@ -173,7 +173,6 @@ const FormData = () => {
                   value={values.date}
                   type="date"
                   name="date"
-                  // placeholder="Minimalist style..."
                 />
               </div>
 
