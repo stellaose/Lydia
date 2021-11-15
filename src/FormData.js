@@ -65,8 +65,7 @@ const FormData = () => {
   }
 
   return (
-    <div className = 'content'>
-
+    <>
       <div className = 'form-div'>
           <h3>Please fill all fields</h3>
             <form action="/" onSubmit={handleSubmit}>
@@ -81,9 +80,6 @@ const FormData = () => {
                   <div>
                     <p>What is your name?</p>
                   </div>
-                  {submitted && !values.name ? (
-                    <span>Please enter your Name</span>
-                  ) : null}
                 </label>
                 <input
                   autoComplete="off"
@@ -93,17 +89,19 @@ const FormData = () => {
                   name="name"
                   placeholder="Joy..."
                 />
+                
               </div>
 
               <div className = 'form-data'>
                 <label htmlFor = 'preference'>
+                    {submitted && !values.preference ? (
+                    <span>Please select your preference</span>
+                  ) : null}
                     <div>
                       <p >What style defines you? </p>
                     </div>
                  
-                  {submitted && !values.preference ? (
-                    <span>Please select your preference</span>
-                  ) : null}
+                  
                 </label>
                 <input
                   autoComplete="off"
@@ -117,12 +115,13 @@ const FormData = () => {
 
               <div className = 'form-data'>
                 <label htmlFor = 'knowledge'>
-                    <div>
-                        <p className = 'know'>Do you know design?</p>
-                    </div>
                   {submitted && !values.knowledge ? (
-                    <span>This is a necessary field</span>
+                      <span>This is a necessary field</span>
                   ) : null}
+                    <div>
+                        <p>Do you know design?</p>
+                    </div>
+                  
                 </label>
                 <input
                   autoComplete="off"
@@ -136,14 +135,15 @@ const FormData = () => {
 
               <div className = 'form-data'>
                 <label htmlFor = 'room'>
+                 {submitted && !values.room ? (
+                    <span>Please select at least one</span>
+                  ) :  null}
                 <div>
-                    <p className = 'room'>
+                    <p >
                       What room would you like designed?
                     </p>
                 </div>
-                  {submitted && !values.room ? (
-                    <span>Please select at least one</span>
-                  ) :  null}
+                 
                 </label>
                 <input
                   autoComplete="off"
@@ -158,13 +158,14 @@ const FormData = () => {
 
               <div className = 'form-data'>
                 <label htmlFor = 'date'>
+                   {submitted && !values.date ? (
+                    <span>Please state your deadline</span>
+                  ) : null}
                     <div>
                       <p >What is your deadline? </p>
                     </div>
                  
-                  {submitted && !values.date ? (
-                    <span>Please state your deadline</span>
-                  ) : null}
+                 
                 </label>
                 <input
                   autoComplete="off"
@@ -178,15 +179,14 @@ const FormData = () => {
 
               <div className = 'form-data'>
                 <label htmlFor = 'price'>
-                <div>
-                    <p className = 'price'>
-                        What is your budget?
-                    </p> 
-                </div>
-
                   {submitted && !values.price ? (
                     <span>Please enter a price</span>
                   ) : null}
+                <div>
+                    <p >
+                        What is your budget?
+                    </p> 
+                </div>                
                 </label>
                 <input
                   autoComplete="off"
@@ -204,7 +204,7 @@ const FormData = () => {
               </div>
             </form>
           </div>
-    </div>
+        </>
   );
 };
 

@@ -25,6 +25,9 @@
 .product > p {
     font-size: 1.2rem;
 }
+.button-body{
+    text-align: center;
+}
 .button-body > button {
     width: 15rem;
     height: 3rem;
@@ -32,7 +35,6 @@
     background: transparent;
     border-radius: 10px;
     padding: 0.5rem;
-    margin: 2rem 12rem 1rem;
 }
 .button-body > button:hover {
     background: rgb(241, 201, 116);
@@ -63,9 +65,6 @@
         width: 42rem;
         height: 38rem;
     }
-    .button-body > button   {
-        margin: 1.5rem 12rem 1rem;
-    }
 }
 @media all and (max-width: 1080px){
     .product-body {
@@ -88,7 +87,6 @@
     .button-body > button {
         width: 13rem;
         height: 2.8rem;
-        margin: 2rem 10rem 1rem;
     }
     .button-body > button > a > h4{
         font-size: 1.3rem;
@@ -105,7 +103,6 @@
     .button-body > button {
         width: 12rem;
         height: 2.6rem;
-        margin: 1.5rem 10rem 1rem;
     }
     .button-body >  button > a > h4{
         font-size: 1.2rem;
@@ -119,9 +116,6 @@
         width: 32rem;
         height: 37rem;
     }
-    .button-body > button {
-        margin: 1rem 8rem;
-    }
 }
 @media all and (max-width: 670px){
     .product-body {
@@ -130,9 +124,6 @@
     .product {
         width: 27rem;
         height: 38rem;
-    }
-    .button-body > button {
-       margin: 1rem 5rem;
     }
     .reviewList > h3{
         font-size: 1.6rem;
@@ -160,7 +151,6 @@
     .button-body > button {
         width: 11rem;
         height: 2.5rem;
-        margin: 1rem 5rem;
     }
     .button-body > button > a > h4{
         font-size: 1.1rem;
@@ -188,7 +178,6 @@
     .button-body > button  {
         width: 9rem;
         height: 2.3rem;
-        margin: 1rem 3rem;
     }
     .button-body > button > a > h4{
         font-size: 0.9rem;
@@ -205,7 +194,6 @@
     .button-body > button {
         width: 9rem;
         height: 2rem;
-        margin: 1rem;
     }
     .button-body > button > a > h4{
         font-size: 0.8rem;
@@ -236,7 +224,6 @@
     .button-body > a > button {
         width: 8rem;
         height: 2rem;
-        margin: 1rem 2rem;
     }
     .button-body > a > button > h4{
         font-size: 0.7rem;
@@ -250,7 +237,5 @@
         width: 14.5rem;
         height: 38rem;
     }
-    .button-body >  button {
-        margin: 1rem 2rem;
-    }
+   
 }

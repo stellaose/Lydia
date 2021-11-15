@@ -10,7 +10,7 @@ export const Signin = (email, password, history) => async (dispatch) => {
       password,
     });
     dispatch({ type: SigninType.SIGNIN_SUCCESS, payload: data });
-    history.push("/");
+    // history.push("/");
     localStorage.setItem("userToken", JSON.stringify(data));
   } catch (err) {
     dispatch({

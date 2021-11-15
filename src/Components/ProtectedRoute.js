@@ -20,7 +20,7 @@ function ProtectedRoute({ component: Component, ...rest}) {
                 );
             } else {
             return( 
-                <Component {...props}/>
+                <Component {...props}></Component>
             )
         }
         }} />

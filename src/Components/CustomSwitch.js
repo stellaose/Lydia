@@ -2,8 +2,6 @@ import { Switch, useLocation } from 'react-router-dom';
 import  { useEffect, useState } from "react";
 import TopBarProgress from "react-topbar-progress-indicator";
 
-import React from 'react'
-
 // eslint-disable-next-line react/prop-types
 const CustomSwitch = ({ children }) => {
     const [progress, setProgress] = useState(false);
