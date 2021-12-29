@@ -125,12 +125,12 @@
 }
 @media all and (max-width: 2000px){
   .next {
-    right: 44rem;
+    right: 46rem;
   }
 }
 @media all and (max-width: 1700px){
   .next {
-    right: 40rem;
+    right: 41.5rem;
   }
 }@media all and (max-width: 1400px){
   .next {
