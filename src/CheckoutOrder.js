@@ -1,51 +1,52 @@
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-// import { GetCheckoutItemsAsync, DeleteFromCheckoutAsync } from './Redux/Action/CheckoutAction';
-import { GetCheckoutItemsAsync } from './Redux/Action/CheckoutAction';
-import './Stylesheets/Checkout.css';
+/* eslint-disable no-unused-vars */
+import React from 'react'
+import { useState, useEffect } from 'react';
+import './Stylesheets/Checkout.css'
 import { Spinner } from "react-bootstrap";
+
+import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+import { GetCheckoutItemsAsync, DeleteCheckoutItemAsync } from './Redux/Action/CheckoutAction';
 
 const CheckoutOrder = () => {
     const { _id } = useSelector((state) => state.userSignin);
     const dispatch = useDispatch();
-
     const { data, pending } = useSelector((state) => state.checkout);
-    console.log(data)
 
     useEffect(() => {
         dispatch(GetCheckoutItemsAsync(_id));
-    }, [_id, dispatch]);
-
-    // const HandleDelete = (serviceId) => {
-
-    //     useEffect(() => {
-    //       dispatch(DeleteFromCheckoutAsync(serviceId));
-    //     }, [serviceId]);
-    //   }
+    }, [dispatch, _id]);
+   
+    console.log(data, "cart order data");
+    
     return (
-        <>
-           {pending && (
-                <>
-                    <div className = 'pending'>
-                        <Spinner animation="grow" />
-                        Loading
-                    </div>
-                </>
-            )}
+      <div className>
 
-            {data && (
-                <>
-                    {data.map((item) => (
-                        <div key={item.service._id}>
-                            <div>
-                                <h3>{item.service.name}</h3>
-                            </div>
-                        </div>
-                    ))}
-                </>
-            )}
-        </>
-    )
-}
+        {data && (
+          <>
+            {data.map((item) => (
+              <div  key={item.service._id}>
+                
+
+                <div >
+                  <Link
+                    to={`/service/${item.service._id}`}>
+                    {" "}
+                    <p> {item.service.name}</p>{" "}
+                  </Link>
+                </div>
+
+              
+
+                <div >
+                  <h2 > {item.service.price}</h2>
+                </div>
+              </div>
+            ))}
+          </>
+        )}
+      </div>
+    );
+};
 
 export default CheckoutOrder;

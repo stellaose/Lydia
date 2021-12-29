@@ -3,13 +3,14 @@ import {Route, Redirect, useLocation} from 'react-router-dom';
 
 function ProtectedRoute({ component: Component, ...rest}) {
     const userToken = localStorage.getItem("userToken");
+    const tokenId = localStorage.getItem("userToken");
     const location = useLocation()
    
     return <>
         <Route 
         {...rest}
         render={props => {
-        if (!userToken) {
+        if (!userToken || !tokenId) {
             return (
                 <Redirect
                     to={{ 

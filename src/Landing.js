@@ -3,6 +3,7 @@ import './Stylesheets/Landing.css';
 import Slider from './Slider';
 import Footer from './Components/Footer';
 import NavBar from './Components/NavBar/NavBar';
+import ReviewSection from './ReviewSection';
 
 const Landing = () => {
     return(
@@ -18,10 +19,14 @@ const Landing = () => {
                 <div id = 'right'>
                     <img src = "/Photos/landing-teal.jpg" alt = "home" />
                 </div>
+                <br/>
             </div>
-            <div id = 'partners'>
-                <Slider />
+            <div>
+                    <ReviewSection />
+                    <Slider />
             </div>
+            <br/>
+
         <Footer />
 
         </>

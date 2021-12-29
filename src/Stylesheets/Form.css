@@ -1,13 +1,11 @@
-body{
+.form-section, .form-div{
+    text-align: center;
     background-color: white;
     color: black;
     font-family: 'Glory', sans-serif;
     padding: 0;
     margin: 0;
     width: 100%;
-}
-.form-section, .form-div{
-    text-align: center;
 }
 .form-section > img{
     height: 24rem;

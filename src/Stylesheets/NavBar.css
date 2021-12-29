@@ -1,49 +1,32 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 .navbar {
-    max-width: 100%;
-    height: 2.5rem;
     display: flex;
-    justify-content: space-around;
+    height: 2rem;
+    justify-content: space-between;
     align-items: center;
-    margin: -1rem 0 2.5rem;
-    font-family: 'Glory', sans-serif;
-}
-hr{
-    margin: 0 1rem;
-    width: 100%;
+    padding: 0 20px;
+    margin-top: -0.5rem;
+    left: 0;
+    right: 0;
 }
 .navbar_logo img{
     height: 2.5rem;
     width: 6rem;
-    margin: -1rem 2rem 1.5rem;
-    justify-self: start;
+    margin: -1.5rem 0 1.5rem 1rem;
     cursor: pointer;
 }
 .menu-icon, .menu, .mobile{
     display: none;
 }
 .link{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    text-align: center;
-    width: 70vw;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-left: -6rem;
+    flex: 1;
     list-style-type: none;
-    padding: 0;
-    overflow: hidden;
 }
-.link li a {
+.link > li > a {
     text-decoration: none;
-    color: black;
 }
-/* .link li a:active h3{
-    border-bottom: 4px solid rgb(241, 201, 116);
-} */
 .link li a h3, .menu li h3{
     padding: 2rem;
     font-size: 20px;
@@ -53,86 +36,37 @@ hr{
     display: none;
 }
 hr{
-    width: 94%;
+    width: 96%;
     align-items: center;
-    margin: 2rem 1rem 1.5rem;
+    margin: 2rem 1rem 0;
 }
-.btn-menu, .btn-menus{
-    height: 33px;
-    font-weight: 500;
-    background-color: white;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    font-family: 'Glory', sans-serif;
-    width: 80px;
-    cursor: pointer;
-}
-.btn-menu{
-    margin: 0.2rem 5rem 2rem 0.5rem;
-    border: 1px solid rgb(241, 201, 116);
-    color: #194416;
-}
-.btn-menu:hover{
-    background-color: rgb(241, 201, 116); 
-}
-.btn-menus{
-    margin: 0.2rem 0.5rem 2rem 0.5rem;
-    border: 1px solid #194416;
-    color: rgb(241, 201, 116);
-}
-.btn-menus:hover{
-    background-color: #194416; 
-}
-
 @media(max-width: 1180px){
     .navbar{
-        margin: -1rem -1rem 2.5rem ;
-    }
-    hr {
-        margin: 1.5rem 1rem 6rem;
+        margin: -0.5rem 0 1rem;
     }
     .navbar_logo img{
-        margin-left: 3rem;
+        margin-left: 0rem;
+        height: 2.4rem;
     } 
-    .link{
-        margin-left: -8rem;
-    } 
-    .btn-menu{
-        margin: -1rem 1rem 1rem -2rem;
-    }
-    .btn-menus{
-        margin: -1rem 2rem 1rem 2rem;
-    }
+    
 }
 @media(max-width: 1080px){
-    .navbar{
-        margin: -1rem 2rem 3rem ;
-        height: 2.5rem;
-    }
     .navbar_logo img {
-        margin: -0.6rem 0 1.8rem 1rem;
+        margin: -0.8rem 0 1.5rem 1rem;
+        height: 2.3rem;
     }
     .link {
         margin-right: 1rem;
     }
-    .btn-menu{
-        margin: -1rem 1.5rem 1.3rem -1rem;
-    }
-    .btn-menus{
-        margin: -1rem 0.8rem 1.3rem -3rem;
-    }
 }
 @media(max-width: 960px){
     .navbar{
-      margin: 1rem 1rem;
-      height: 2.5rem;
-      z-index: 100;
-    }
-    hr {
-        margin: 1rem 1rem 2rem;
+        justify-content: space-around;
+        z-index: 100;
     }
     .navbar_logo img {
-        margin: -0.5rem 18rem 0.5rem 0;
+        margin: 0.8rem 0 1rem -5rem;
+        height: 2.2rem;
     }
     .link{
         display: none;
@@ -168,7 +102,7 @@ hr{
         border: none;
         display: block;
         position: absolute;
-        margin: -1.9rem 1rem 0.5rem -2rem;
+        margin: -1.5rem 1rem 2rem -2rem;
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
@@ -190,13 +124,15 @@ hr{
 }
 @media all and (max-width: 780px){
     .navbar{
-        margin: 1rem 0 1rem -2rem;
+        margin: 0rem 0 1rem;
     }
     .navbar_logo img {
-        margin: 0 17rem 0 3rem;
+        height: 2rem;
+        width: 5.8rem;
+        margin: 1rem 0 0.5rem -4rem;
     }
     .menu-icon{
-        margin-right: 2rem;
+        margin: -2rem 0.5rem 2rem -2rem;
     }
     .menu{
         height: 45vh;
@@ -204,25 +140,18 @@ hr{
 }
 @media all and (max-width: 560px){
     .navbar_logo img {
-        margin: 0 13rem 0 3rem;
+        margin: 0.5rem 0 0.5rem -3rem;
     }
     .menu-icon{
-        margin-right: -2rem;
+        margin-right: -1rem;
     }
     .menu{
         height: 42vh;
     }
 }
 @media  all and (max-width: 365px){
-    .navbar{
-        margin: 0;
-        width: 100%;
-    }
-    hr{
-        margin-top: 1rem;
-    }
     .navbar_logo img {
-        margin-right: 12rem;
+        margin: 0.5rem 0 0.5rem -2rem;
     }
     .menu{
         height: 50vh;

@@ -10,17 +10,20 @@ const initialState = {
 const SignupReducer = (state = initialState, action) => {
     switch(action.type) {
         case SignupType.REGISTER_REQUEST:
-            return { ...state, 
+            return { 
+                ...state, 
                 isLoading: true 
             };
         case SignupType.REGISTER_SUCCESS:
-            return { ...state, 
+            return { 
+                ...state, 
                 isLoading: false, 
                 isAuthenticated: true, 
                 user: action.payload 
             };
         case SignupType.REGISTER_FAIL:
-            return { ...state, 
+            return { 
+                ...state, 
                 isLoading: false, 
                 error: action.payload 
             };

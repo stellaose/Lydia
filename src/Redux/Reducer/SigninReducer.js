@@ -17,7 +17,7 @@ const SigninReducer = (state = initialState, action) => {
                 ...state, 
                 isLoading: true 
           };
-
+        
     case SigninType.SIGNIN_SUCCESS:
       return {
           ...state,
@@ -25,7 +25,7 @@ const SigninReducer = (state = initialState, action) => {
           isAuthenticated: true,
           user: action.payload,
       };
-
+    
     case SigninType.GOOGLE_SIGNIN: 
       return {
         ...state,
@@ -33,12 +33,21 @@ const SigninReducer = (state = initialState, action) => {
         isAuthenticated: true,
         user: action.payload,
       };
-
+    
     case SigninType.SIGNIN_FAIL:
       return { 
               ...state, 
               isLoading: false, 
               error: action.payload 
+          };
+    case SigninType.FORGET_PASSWORD: 
+          return {
+
+          };
+    
+    case SigninType.RESET_PASSWORD: 
+         return {
+
           };
 
     case SigninType.SIGNOUT:
@@ -46,7 +55,7 @@ const SigninReducer = (state = initialState, action) => {
               isAuthenticated: false,
               isLoading: false
           };
-
+        
     default:
       return state;
   }

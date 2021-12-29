@@ -1,5 +1,5 @@
 import { CheckoutType } from "../Type/CheckoutType";
-import Axios from "axios";
+import axios from "axios";
 import BaseURL from "../../Utils/BaseUrl";
 
 const GetCheckoutItem = (data) => {
@@ -17,25 +17,28 @@ const DeleteFromCheckout = () => {
 }
 
 
-export const PostToCheckoutAsync = (serviceId) => async() => {
+export const PostToCheckoutAsync = (id) => async(dispatch) => {
   try {
     const userToken = localStorage.getItem("userToken");
-    const { token } = JSON.parse(userToken);
+    const objectToken = JSON.parse(userToken);
+    const { token } = objectToken;
    
-    let res = await Axios.post(`https://${BaseURL}/checkout/${serviceId}`, { serviceId }, {
+    console.log(token);
+    // let res = await axios.post(`https://${BaseURL}/checkout/${id}`, { id }, {
+     let res = await axios.post(`http://localhost:4000/checkout/${id}`, { id }, {
       headers: {
         'Authorization': `${token}`,
       }   
   });
-  console.log(res)
-  } 
-  catch (err) {
+    console.log(res, "cart for post o")
+  } catch (err) {
     console.log(err);
   }
 }
 export const GetCheckoutItemsAsync = (userId) => async(dispatch) => {
   try {
-    let res = await Axios.get(`https://${BaseURL}/checkout/${userId}`);
+    // let res = await axios.get(`https://${BaseURL}/checkout/${userId}`);
+    let res = await axios.post(`http://localhost:4000/checkout/${userId}`)
 
     dispatch(GetCheckoutItem(res.data))
   } 
@@ -49,7 +52,7 @@ export const DeleteFromCheckoutAsync = (serviceId) => async (dispatch) => {
     const objectToken = JSON.parse(userToken);
     const { token } = objectToken;
   try {
-    let res = await Axios.delete( `https://${BaseURL}/checkout/${serviceId}`, { serviceId },
+    let res = await axios.delete( `https://${BaseURL}/checkout/${serviceId}`, { serviceId },
       {
         headers: {
           Authorization: `${token}`,

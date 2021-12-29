@@ -1,12 +1,3 @@
-* {
-    color: black;
-    font-family: 'Glory', sans-serif;
-    padding: 0;
-    margin: 0;
-}
-body{
-    background-color: white;
-}
 .container {
     margin: 2rem 0 3rem ;
     max-width: 100%;
@@ -87,8 +78,12 @@ body{
 .success{
     font-size: 1.5rem;
     color: red;
-  }
- 
+}
+ .reset{
+     text-align: right;
+     margin-right: 10rem;
+     margin-top: -0.5rem;
+ }
 .register > a{
     text-decoration: none;
     cursor: pointer;

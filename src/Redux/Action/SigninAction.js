@@ -2,7 +2,7 @@ import axios from "axios";
 import BaseURL from "../../Utils/BaseUrl";
 import { SigninType } from "../Type/SigninType";
 
-export const Signin = (email, password, history) => async (dispatch) => {
+export const Signin = (email, password) => async (dispatch) => {
   dispatch({ type: SigninType.SIGNIN_REQUEST });
   try {
     const { data } = await axios.post(`${BaseURL}/user/login`, {
@@ -10,7 +10,7 @@ export const Signin = (email, password, history) => async (dispatch) => {
       password,
     });
     dispatch({ type: SigninType.SIGNIN_SUCCESS, payload: data });
-    // history.push("/");
+    // history.goBack();
     localStorage.setItem("userToken", JSON.stringify(data));
   } catch (err) {
     dispatch({
@@ -27,18 +27,17 @@ export const GoogleSignin = (response, history) => async (dispatch) => {
     })
 
     dispatch({ type: SigninType.GOOGLE_SIGNIN, payload: data });
-    history.push("/");
     localStorage.setItem("userToken", JSON.stringify(data));
   }
   catch(err){
     console.log(err)
   }
 }
-export const Signout = (history) => async (dispatch) => {
+export const Signout = () => async (dispatch) => {
  try{
     dispatch({ type: SigninType.SIGNOUT});
-      history.push("/");
-      localStorage.removeItem("userToken")
+      // history.push("/");
+      localStorage.removeItem("userToken", "tokenId")
  }
  catch(err){
     console.log(err)

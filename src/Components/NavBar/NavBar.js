@@ -19,7 +19,7 @@ const NavBar = () => {
 
     const refreshPage = () => {
         localStorage.removeItem("userToken");
-        history.push("/");
+        history.goBack();
         window.location.reload(false);
       }
 

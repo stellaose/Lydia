@@ -11,19 +11,12 @@ const GoogleLoginBtn = () => {
 
     const responseSuccessGoogle = (response) => {
         console.log(response);
-        dispatch(GoogleSignin(response, history))
-
-        // axios({
-        //     method: 'POST',
-        //     url: 'http://localhost:4000/user/google',
-        //     data: {tokenId: response.tokenId}
-        // }).then(response => {
-        //     console.log('Google login success', response);
-        // });
+        history.goBack()
+        dispatch(GoogleSignin(response))
     }
 
-    const responseErrorGoogle = () => {
-
+    const responseErrorGoogle = (err) => {
+        console.log(err)
     }
     return (
         <>

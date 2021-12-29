@@ -1,3 +1,32 @@
+.reviewBody {
+    width: 100vw;
+    height: 20rem;
+    background-color: rgb(241, 201, 116);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.getOne {
+    text-align: center; 
+    margin-top: 1rem; 
+}
+.getOne > h2, .getOne > h3{
+    color: #194416;
+}
+.getOne > h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+.getOne > h3 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: -0.8rem 0 0.5rem;
+}
+.getOne > p {
+    font-size: 1.3rem;
+}
 .reviewContainer{
     display: grid;
     margin: 2rem auto;
@@ -98,6 +127,22 @@
     background: rgb(241, 201, 116);
 }
 @media all and (max-width: 960px){
+    .reviewBody {
+        height: 18rem;
+        margin-top: -3rem;
+    }
+    .getOne {
+        margin-top: 1rem; 
+    }
+    .getOne > h2 {
+        font-size: 2.6rem;
+    }
+    .getOne > h3 {
+        font-size: 1.8rem;
+    }
+    .getOne > p {
+        font-size: 1rem;
+    }
     .reviewForm{
         margin: 2rem 8rem 4rem;
         width: 27rem;
@@ -107,6 +152,18 @@
     }
 }
 @media all and (max-width: 760px){
+    .reviewBody {
+        height: 17rem;
+    }
+    .getOne > h2 {
+        font-size: 2.5rem;
+    }
+    .getOne > h3 {
+        font-size: 1.7rem;
+    }
+    .getOne > p {
+        font-size: 1rem;
+    }
     .reviewForm{
         margin: 2rem 9rem 4rem;
         width: 23rem;
@@ -119,6 +176,23 @@
     }
 }
 @media all and (max-width: 600px){
+    .reviewBody {
+        height: 17rem;
+        margin-top: -4rem;
+    }
+    .getOne {
+        margin-top: 0.5rem; 
+    }
+    .getOne > h2 {
+        font-size: 2.4rem;
+    }
+    .getOne > h3 {
+        font-size: 1.7rem;
+        margin: -0.5rem 0 0rem;
+    }
+    .getOne > p {
+        font-size: 1rem;
+    }
     .reviewContainer > .review {
         height: 13rem;
     }
@@ -144,7 +218,24 @@
         font-size: 1.6rem;
     }
 }
+@media all and (max-width: 550px){
+    .reviewBody{
+        margin-top: -5rem;
+    }
+}
 @media all and (max-width: 500px){
+    .reviewBody {
+        height: 16rem;
+    }
+    .getOne > h2 {
+        font-size: 2.3rem;
+    }
+    .getOne > h3 {
+        font-size: 1.5rem;
+    }
+    .getOne > p {
+        font-size: 0.9rem;
+    }
     .reviewContainer{
         display: block;
     }
@@ -163,7 +254,29 @@
     
     }
 }
+@media all and (max-width: 480px){
+    .reviewBody{
+        margin-top: -7rem;
+    }
+}
+@media all and (max-width: 440px){
+    .reviewBody{
+        margin-top: -9rem;
+    }
+}
 @media all and (max-width: 400px){
+    .reviewBody {
+        height: 15rem;
+    }
+    .getOne > h2 {
+        font-size: 2.1rem;
+    }
+    .getOne > h3 {
+        font-size: 1.3rem;
+    }
+    .getOne > p {
+        font-size: 0.9rem;
+    }
     .reviewContainer > .review{
         margin: 2rem auto;
         height: 10rem;
@@ -194,9 +307,32 @@
         font-size: 0.9rem;
     }
 }
+@media all and (max-width: 370px){
+    .reviewBody {
+        margin-top: -10rem;
+        height: 14rem;
+    }
+    .getOne > h2 {
+        font-size: 2rem;
+    }
+    .getOne > h3 {
+        font-size: 1.1rem;
+    }
+    .getOne > p {
+        font-size: 0.8rem;
+    }
+}
+@media all and (max-width: 370px){
+    .reviewBody {
+        margin-top: -10rem;
+    }
+}
 @media all and (max-width: 360px){
+    .reviewBody {
+        margin-top: -3rem;
+    }
     .reviewContainer > .review{
-        height: 9rem;
+        height: 12rem;
     }
     .reviewForm{
         margin: 2rem 13rem 4rem;
@@ -217,7 +353,30 @@
         font-size: 0.7rem;
 }
 }
+@media all and (max-width: 340px){
+    .reviewBody {
+        margin-top: -3rem;
+        height: 11rem;
+    }
+    .getOne > h2 {
+        font-size: 1.9rem;
+    }
+    .getOne > h3 {
+        font-size: 1.1rem;
+    }
+    .getOne > p {
+        font-size: 0.7rem;
+    }
+}
+@media all and (max-width: 320px){
+    .reviewBody {
+        /* margin-top: -1rem; */
+    }
+}
 @media all and (max-width: 290px){
+    .reviewBody {
+        height: 10rem;
+    }
     .reviewContainer > .review{
         height: 9rem;
     }

@@ -30,10 +30,10 @@ const Slider = () => {
     }
     return (
         <>
-            <div className = 'container'>
-                <hr/>
+            <div className = 'contain'>
+                <br/>
                     
-                    <div className = '"container-slider"'>
+                    <div className = "container-slider">
                             {SliderData.map((obj, index) => {
                             return (
                                 <div key={obj.id} className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
@@ -60,11 +60,11 @@ const Slider = () => {
                         <div className = 'service'>
                                 <h2>1</h2>
                                 <h2>2</h2>
-                                <p>Ideas</p>
-                                <p>Consultation</p>
+                                <p className = 'grid'>Ideas</p>
+                                <p className = 'grid'>Consultation</p>
                         </div>
                         <Link to = '/service'>
-                                <p>See more of our services &gt;&gt; </p>
+                                <p >See more of our services &gt;&gt; </p>
                         </Link>
                     </div>
             </div>

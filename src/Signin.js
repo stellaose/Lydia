@@ -26,8 +26,8 @@ const Login = () => {
 
       const handleSubmit = (e) => {
         e.preventDefault();
-    
-        dispatch(Signin(email, password, history));
+        history.goBack()
+        dispatch(Signin(email, password));
       };
 
     return (
@@ -74,6 +74,15 @@ const Login = () => {
                                 <span className = 'p-viewer'>
                                 </span>
                             </div>
+
+                            <div className = 'reset'>
+                                <Link to = 'forget-password'>
+                                    <p>
+                                        Forget Password? 
+                                    </p>
+                                </Link>
+                            </div>
+
                             <div className = 'form-control'>
                                 <button type="submit" onClick = {Signin}>
                                     Sign in
@@ -81,6 +90,8 @@ const Login = () => {
                             </div>
                         </form>
                      </div>
+
+                     
                      
                      <div className = 'register'>
                          <Link to = '/signup'>
