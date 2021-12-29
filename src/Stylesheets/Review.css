@@ -368,11 +368,6 @@
         font-size: 0.7rem;
     }
 }
-@media all and (max-width: 320px){
-    .reviewBody {
-        /* margin-top: -1rem; */
-    }
-}
 @media all and (max-width: 290px){
     .reviewBody {
         height: 10rem;

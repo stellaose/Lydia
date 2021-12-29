@@ -123,6 +123,16 @@
   padding: 0 1rem;
   margin-left: 1rem;
 }
+@media all and (max-width: 2000px){
+  .next {
+    right: 41rem;
+  }
+}
+@media all and (max-width: 1700px){
+  .next {
+    right: 38rem;
+  }
+}
 @media all and (max-width: 1180px){
   .container-slider {
     height: 26rem;
@@ -184,13 +194,13 @@
     height: 21rem;
   }
   .prev {
-    top: 83rem;
+    top: 80.5rem;
   }
   .next {
-    top: 83rem;
+    top: 80.5rem;
   }
   .container-dots {
-    top: 83rem;
+    top: 81rem;
   }
   .title > h1, .title > a > p, .service{
     margin-left: -3.5rem;

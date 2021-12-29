@@ -140,7 +140,9 @@ hr{
 }
 @media all and (max-width: 560px){
     .navbar_logo img {
-        margin: 0.5rem 0 0.5rem -3rem;
+        height: 1.9rem;
+        width: 5.6rem;
+        margin: 1rem 0 0.5rem -2.5rem;
     }
     .menu-icon{
         margin-right: -1rem;
