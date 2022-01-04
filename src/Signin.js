@@ -26,15 +26,14 @@ const Login = () => {
 
       const handleSubmit = (e) => {
         e.preventDefault();
-        history.goBack()
-        dispatch(Signin(email, password));
+        dispatch(Signin(email, password, history));
       };
 
     return (
         <>
         <NavBar />
            <div className = 'container'>
-                <div className = 'image'>
+                <div className = 'reg'>
                     <img src="/Photos/signin.jpeg" alt="" />
                 </div>
 

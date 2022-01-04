@@ -68,6 +68,7 @@ const Slider = () => {
                         </Link>
                     </div>
             </div>
+            <br/>
         </>
     )
 }

@@ -5,7 +5,6 @@ import  ServicesReducer  from "./ServicesReducer";
 import  ServiceReducer  from "./ServiceReducer";
 import  SignupReducer  from './SignupReducer';
 import FormReducer from './FormReducer';
-import ReviewReducer from './ReviewReducer'
 import CheckoutReducer from "./CheckoutReducer";
 
 const rootReducer = combineReducers({
@@ -14,7 +13,6 @@ const rootReducer = combineReducers({
   services: ServicesReducer,
   service: ServiceReducer,
   form: FormReducer,
-  review: ReviewReducer,
   checkout: CheckoutReducer
 });
 

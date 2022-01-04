@@ -11,18 +11,11 @@
     text-align: center; 
     margin-top: 1rem; 
 }
-.getOne > h2, .getOne > h3{
-    color: #194416;
-}
 .getOne > h2 {
     font-size: 2.8rem;
     font-weight: 800;
-}
-.getOne > h3 {
-    text-align: left;
-    font-size: 2rem;
-    font-weight: 700;
-    margin: -0.8rem 0 0.5rem;
+    color: #194416;
+    margin-bottom: 1.5rem;
 }
 .getOne > p {
     font-size: 1.3rem;
@@ -137,9 +130,6 @@
     .getOne > h2 {
         font-size: 2.6rem;
     }
-    .getOne > h3 {
-        font-size: 1.8rem;
-    }
     .getOne > p {
         font-size: 1rem;
     }
@@ -186,10 +176,6 @@
     .getOne > h2 {
         font-size: 2.4rem;
     }
-    .getOne > h3 {
-        font-size: 1.7rem;
-        margin: -0.5rem 0 0rem;
-    }
     .getOne > p {
         font-size: 1rem;
     }
@@ -230,9 +216,6 @@
     .getOne > h2 {
         font-size: 2.3rem;
     }
-    .getOne > h3 {
-        font-size: 1.5rem;
-    }
     .getOne > p {
         font-size: 0.9rem;
     }
@@ -270,9 +253,6 @@
     }
     .getOne > h2 {
         font-size: 2.1rem;
-    }
-    .getOne > h3 {
-        font-size: 1.3rem;
     }
     .getOne > p {
         font-size: 0.9rem;
@@ -314,9 +294,6 @@
     }
     .getOne > h2 {
         font-size: 2rem;
-    }
-    .getOne > h3 {
-        font-size: 1.1rem;
     }
     .getOne > p {
         font-size: 0.8rem;
@@ -360,9 +337,6 @@
     }
     .getOne > h2 {
         font-size: 1.9rem;
-    }
-    .getOne > h3 {
-        font-size: 1.1rem;
     }
     .getOne > p {
         font-size: 0.7rem;

@@ -53,7 +53,7 @@ const SignUp = () => {
       values.password &&
       values.confirmPassword &&
       values.confirmPassword === values.password &&
-      values.password.length > 8 
+      values.password.length > 7 
     ) {
       SetValid(true);
     }
@@ -66,21 +66,21 @@ const SignUp = () => {
     <>
     <NavBar />
       <div className = 'container'>
-          <div className ='image'>
+          <div className ='reg'>
             <img src ="/Photos/signup3.jpg" alt = "" />
         </div>
 
         <div className = 'second'>    
-              
+                
             <div className = 'form'>
             <h2>Create an account</h2>
-              <form action="/" onSubmit={handleSubmit}>
-                {submitted && valid ? (
-                  <div className = 'success'>
-                    Signup successful!
-                  </div>
-                ) : null}
-                
+              <form action="/" onSubmit={handleSubmit}> 
+                  {submitted && valid ? (
+                      <div className = 'success'>
+                        Signup successful!
+                      </div>
+                    ) : null
+                  }        
                   <div className = 'section'>
                   <label htmlFor = 'firstname'>
                     Firstname: <br />
@@ -139,8 +139,8 @@ const SignUp = () => {
                     <br />{" "}
                     {submitted && !values.password ? (
                       <span>Please enter a password</span>
-                    ) : submitted && (values.password.length < 8) ? 
-                    <span> Password should not be less than 8 characters</span>
+                    ) : submitted && (values.password.length < 7) ? 
+                    <span> Password should not be less than 7 characters</span>
                     : submitted }
                   </label>
                   <input

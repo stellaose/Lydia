@@ -9,7 +9,7 @@ const Landing = () => {
     return(
         <> 
         <NavBar />
-            <div className = 'container'>
+            <div className = 'landing'>
                 <div id = 'left'>
                     <h1>Create your own space here.</h1>
                     <Link to = '/form'>
@@ -21,6 +21,7 @@ const Landing = () => {
                 </div>
                 <br/>
             </div>
+
             <div>
                     <ReviewSection />
                     <Slider />
