@@ -98,7 +98,7 @@
 }
 @media all and (max-width: 960px){
     .landing{
-        margin-top: -3rem;
+        margin-top: 2rem;
     }
     #left {
         width: 35vw;
@@ -160,7 +160,6 @@
     #right{
         min-height: 26rem;
         margin-bottom: 8rem;
-        margin-right: -1rem;
     }
     #right > img {
         border-radius: 0;
@@ -263,6 +262,9 @@
     }
 }
 @media all and (max-width: 370px){
+    #lef{
+        margin-bottom: 0;
+    }
     #left > h1 {
         font-size: 1.5rem;
         margin-left: 0;

@@ -143,7 +143,7 @@
 }
 @media all and (max-width: 760px){
     .reviewBody {
-        height: 17rem;
+        height: 15rem;
     }
     .getOne > h2 {
         font-size: 2.5rem;
@@ -167,11 +167,7 @@
 }
 @media all and (max-width: 600px){
     .reviewBody {
-        height: 17rem;
         margin-top: -4rem;
-    }
-    .getOne {
-        margin-top: 0.5rem; 
     }
     .getOne > h2 {
         font-size: 2.4rem;
@@ -299,14 +295,9 @@
         font-size: 0.8rem;
     }
 }
-@media all and (max-width: 370px){
-    .reviewBody {
-        margin-top: -10rem;
-    }
-}
 @media all and (max-width: 360px){
     .reviewBody {
-        margin-top: -3rem;
+        margin-top: -10rem;
     }
     .reviewContainer > .review{
         height: 12rem;
@@ -332,11 +323,10 @@
 }
 @media all and (max-width: 340px){
     .reviewBody {
-        margin-top: -3rem;
         height: 11rem;
     }
     .getOne > h2 {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
     .getOne > p {
         font-size: 0.7rem;
