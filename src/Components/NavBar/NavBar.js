@@ -1,8 +1,9 @@
 import {useState} from 'react';
 import { BiMenuAltRight } from 'react-icons/bi';
 import {AiOutlineClose} from 'react-icons/ai';
-import { Link, useHistory } from 'react-router-dom';
-import { useSelector } from "react-redux";
+import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+import { Signout } from '../../Redux/Action/SigninAction'
 
 import '../../Stylesheets/NavBar.css';
 import Button from './Button';
@@ -11,15 +12,15 @@ const NavBar = () => {
     const [isMobile, setIsMobile] = useState(false);
     const { isAuthenticated } = useSelector((state) => state.userSignin || {});
 
-    let history = useHistory();
+    const dispatch = useDispatch()
 
     const handleClick = () => {
         setIsMobile(!isMobile)
     } 
 
-    const refreshPage = () => {
-        localStorage.removeItem("userToken");
-        history.goBack();
+    const refreshPage = (e) => {
+        e.preventDefault();
+        dispatch(Signout())
         window.location.reload(false);
       }
 

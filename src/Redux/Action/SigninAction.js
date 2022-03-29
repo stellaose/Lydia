@@ -11,7 +11,7 @@ export const Signin = (email, password, history) => async (dispatch) => {
     });
     
     dispatch({ type: SigninType.SIGNIN_SUCCESS, payload: data });
-    history.push("/");
+    history.goBack();
     localStorage.setItem("userToken", JSON.stringify(data));
   } 
   catch (err) {
@@ -35,7 +35,7 @@ export const GoogleSignin = (response, history) => async (dispatch) => {
     console.log(err)
   }
 }
-export const Signout = () => async (dispatch) => {
+export const Signout = () => (dispatch) => {
  try{
     dispatch({ type: SigninType.SIGNOUT});
       // history.push("/");

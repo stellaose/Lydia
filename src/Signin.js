@@ -9,7 +9,7 @@ import './Stylesheets/Signin.css';
 
 const Login = () => {
     const [signinInfo, setSigninInfo] = useState(
-        {username: "", 
+        {email: "", 
         password: ""});
         
     const dispatch = useDispatch();
